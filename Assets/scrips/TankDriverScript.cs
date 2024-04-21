@@ -59,7 +59,7 @@ public class TankDriverScript : MonoBehaviour
 
     public void RotateTank()
     {
-        //rotationInput = Input.GetAxis("Horizontal");
+        //tank rotation
         rotationInput = IM.horizontal;
 
         float rotation = rotationInput * rotationSpeed * Time.fixedDeltaTime;

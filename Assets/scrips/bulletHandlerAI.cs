@@ -2,27 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletHandler : MonoBehaviour
+public class bulletHandlerAI : MonoBehaviour
 {
+    public float fireRate = 1F;
+    private float fireCountDown = 0F;
     public float launchSpeed = 100.0f;
     public GameObject objectPrefab;
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0)) 
+        if (fireCountDown <= 0F)
         {
-            SpawnObject(); 
+            Shoot();
+            fireCountDown = 1F / fireRate;
         }
+        fireCountDown -= Time.deltaTime;
     }
- 
-
-    void SpawnObject() 
+    void Shoot()
     {
         Vector3 SpawnPosition = transform.position;
         Quaternion spawnRotation = Quaternion.identity;

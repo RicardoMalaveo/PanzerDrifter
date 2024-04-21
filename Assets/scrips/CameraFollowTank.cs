@@ -45,9 +45,6 @@ public class CameraFollowTank : MonoBehaviour
 
     private void FixedUpdate()
     {
-
-        
-
         LookAtTarget();
         MoveToTarget(); 
     }

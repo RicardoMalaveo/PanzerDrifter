@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollowTarget : MonoBehaviour
 {
-    public float spinSpeed = 80.0f;
+    public float spinSpeed = 150.0f;
     void Update()
     {
 

@@ -1593,7 +1593,6 @@ GameObject:
   - component: {fileID: 5321752458746097069}
   - component: {fileID: 6971729861348228103}
   - component: {fileID: 7147086853318960749}
-  - component: {fileID: 3039413609147051796}
   m_Layer: 0
   m_Name: Torreta
   m_TagString: Untagged
@@ -1669,19 +1668,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3039413609147051796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3648066543639440581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 289f322e5942f5144a2d672b29b6bcff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spinSpeed: 80
 --- !u!1 &3678595760155570052
 GameObject:
   m_ObjectHideFlags: 0

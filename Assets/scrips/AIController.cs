@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class TankDriverScript : MonoBehaviour
+public class AIController : MonoBehaviour
 {
-    private inputManager IM;
+    private AIInputManager AIM;
     public WheelCollider[] wheels = new WheelCollider[8];
     public float torque = 1000F;
     public float brakeForce = 400.0f;
@@ -25,7 +24,7 @@ public class TankDriverScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        RotateWheel(/*IM.vertical, IM.horizontal*/);
+        RotateWheel(AIM.vertical, AIM.horizontal);
         Acceleration();
         RotateTank();
         Breaks();
@@ -35,7 +34,7 @@ public class TankDriverScript : MonoBehaviour
     {
         for (int i = 0; i < wheels.Length; i++)
         {
-            wheels[i].motorTorque = IM.vertical * torque;
+            wheels[i].motorTorque = AIM.vertical * torque;
         }
     }
 
@@ -60,23 +59,23 @@ public class TankDriverScript : MonoBehaviour
     public void RotateTank()
     {
         //tank rotation
-        rotationInput = IM.horizontal;
+        rotationInput = AIM.horizontal;
 
         float rotation = rotationInput * rotationSpeed * Time.fixedDeltaTime;
 
-         Quaternion turnRotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+        Quaternion turnRotation = Quaternion.Euler(0.0f, rotation, 0.0f);
 
-         rb.MoveRotation(rb.rotation * turnRotation);
+        rb.MoveRotation(rb.rotation * turnRotation);
     }
-    void RotateWheel(/*float moveInput, float rotationInput*/)
+    void RotateWheel(float moveInput, float rotationInput)
     {
-        float WheelRotation = IM.vertical * wheelRotationSpeed * Time.fixedDeltaTime;
+        float WheelRotation = AIM.horizontal * wheelRotationSpeed * Time.fixedDeltaTime;
         //move the left wheels
         foreach (GameObject wheel in leftWheels)
         {
             if (wheel != null)
             {
-                wheel.transform.Rotate(WheelRotation - IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f, 0.0f);
+                wheel.transform.Rotate(WheelRotation - AIM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f, 0.0f);
             }
         }
         //move the right wheels
@@ -84,14 +83,14 @@ public class TankDriverScript : MonoBehaviour
         {
             if (wheel != null)
             {
-                wheel.transform.Rotate(WheelRotation + IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f, 0.0f);
+                wheel.transform.Rotate(WheelRotation + AIM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f, 0.0f);
             }
         }
     }
 
     private void getIM()
     {
-        IM = GetComponent<inputManager>();
+        AIM = GetComponent<AIInputManager>();
     }
 
 

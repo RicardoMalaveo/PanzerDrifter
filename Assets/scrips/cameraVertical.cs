@@ -18,11 +18,7 @@ public class cameraVertical : MonoBehaviour
     float targetCamEulers;
     Vector3 targetCmRotation;
 
-    void Start()
-    {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+
     public void handleRotation(float hInput, float vInput)
     {
         float targetPlayerRotation = hInput * hRotationSpeed * Time.deltaTime;

@@ -14,8 +14,9 @@ public class TurretRotation : MonoBehaviour
         }
         else
         {
-            transform.Rotate(Vector3.forward, -Input.GetAxis("Mouse X") * spinSpeed * Time.deltaTime);
+            
         }
+        transform.Rotate(Vector3.forward, -Input.GetAxis("Mouse X") * spinSpeed * Time.deltaTime);
     }
 
 

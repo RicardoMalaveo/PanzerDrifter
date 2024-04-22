@@ -54,7 +54,6 @@ public class turretRotationAI : MonoBehaviour
         }
 
         //turret rotation to target
-
         Vector3 direction = target.position - transform.position;
         Quaternion LookRotation = Quaternion.LookRotation(direction);
         Vector3 rotation = Quaternion.Lerp (Turret.rotation, LookRotation, Time.deltaTime * turretRotationSpeed).eulerAngles;

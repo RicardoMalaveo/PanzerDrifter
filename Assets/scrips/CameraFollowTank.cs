@@ -26,23 +26,7 @@ public class CameraFollowTank : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             objectToFollow = objectToFollowBody;
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            Vector3 mouseDirection = ray.direction;
-            mouseDirection.y = 0;
-            Quaternion targetRotation = Quaternion.LookRotation(mouseDirection);
 
-            Quaternion currentRotation = transform.rotation;
-            float angularDifference = Quaternion.Angle(currentRotation, targetRotation);
-
-            // will always be positive (or zero)
-            if (angularDifference > 0)
-            {
-                transform.rotation = Quaternion.Slerp(currentRotation, targetRotation, (rotationSpeed * 180 * Time.deltaTime) / angularDifference);
-            }
-            else
-            {
-                transform.rotation = targetRotation;
-            }
         }
         else if(Input.GetKey(KeyCode.LeftControl))
         {

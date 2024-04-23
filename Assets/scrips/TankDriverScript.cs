@@ -1,14 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class TankDriverScript : MonoBehaviour
 {
+    public RawImage engine;
+    public RawImage leftOruga;
+    public RawImage rightOruga;
     private inputManager IM;
-    public WheelCollider[] wheels = new WheelCollider[8];
-    public float torque = 550000F;
-    public float brakeForce = 1000000000000f;
+    public WheelCollider[] wheelsRight = new WheelCollider[4]; 
+    public WheelCollider[] wheelsLeft = new WheelCollider[4];
+    public float torqueRight = 550000F;
+    public float torqueLeft = 550000F;
+    private float torqueMaxRight = 550000F;
+    private float torqueMaxLeft = 550000F;
+    private float brakeForce = 1000000000000f;
     public float rotationSpeed = 100.0f;
     private Rigidbody rb;
     private float rotationInput;
@@ -23,6 +31,62 @@ public class TankDriverScript : MonoBehaviour
         getIM();
     }
 
+    void Update()
+    {
+        if(torqueRight >440000F)
+        {
+            rightOruga.color = Color.green;
+        }
+        else if(torqueRight>330000)
+        {
+            rightOruga.color = Color.yellow;
+        }
+        else if (torqueRight > 220000)
+        {
+            rightOruga.color = Color.red;
+        }
+        else
+        {
+            rightOruga.color = Color.black;
+        }
+
+        if (torqueLeft > 440000F)
+        {
+            leftOruga.color = Color.green;
+        }
+        else if (torqueLeft > 330000)
+        {
+            leftOruga.color = Color.yellow;
+        }
+        else if (torqueLeft > 220000)
+        {
+            leftOruga.color = Color.red;
+        }
+        else
+        {
+            leftOruga.color = Color.black;
+        }
+
+
+        if (torqueLeft > 440000F && torqueRight > 440000F)
+        {
+            engine.color = Color.green;
+        }
+        else if (torqueLeft > 330000 && torqueRight > 330000)
+        {
+            engine.color = Color.yellow;
+        }
+        else if (torqueLeft > 220000 && torqueRight > 220000)
+        {
+            engine.color = Color.red;
+        }
+        else
+        {
+            engine.color = Color.black;
+        }
+
+    }
+
     private void FixedUpdate()
     {
         RotateWheel();
@@ -33,9 +97,14 @@ public class TankDriverScript : MonoBehaviour
 
     public void Acceleration()
     {
-        for (int i = 0; i < wheels.Length; i++)
+        for (int i = 0; i < wheelsRight.Length; i++)
         {
-            wheels[i].motorTorque = IM.vertical * torque;
+            wheelsRight[i].motorTorque = IM.vertical * torqueRight;
+        }
+
+        for (int i = 0; i < wheelsLeft.Length; i++)
+        {
+            wheelsLeft[i].motorTorque = IM.vertical * torqueRight;
         }
     }
 
@@ -43,16 +112,31 @@ public class TankDriverScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            for (int i = 0; i < wheels.Length; i++)
+            for (int i = 0; i < wheelsRight.Length; i++)
             {
-                wheels[i].brakeTorque = brakeForce;
+                wheelsRight[i].brakeTorque = brakeForce;
             }
         }
         else
         {
-            for (int i = 0; i < wheels.Length; i++)
+            for (int i = 0; i < wheelsRight.Length; i++)
             {
-                wheels[i].brakeTorque = 0F;
+                wheelsRight[i].brakeTorque = 0F;
+            }
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            for (int i = 0; i < wheelsLeft.Length; i++)
+            {
+                wheelsLeft[i].brakeTorque = brakeForce;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < wheelsLeft.Length; i++)
+            {
+                wheelsLeft[i].brakeTorque = 0F;
             }
         }
     }

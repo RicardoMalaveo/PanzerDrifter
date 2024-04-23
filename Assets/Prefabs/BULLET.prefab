@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactEffect: {fileID: 1192712332957744454, guid: af51a88dbcb5f704b98884e6c6cf7ed1, type: 3}
+  torqueReductor: 110000

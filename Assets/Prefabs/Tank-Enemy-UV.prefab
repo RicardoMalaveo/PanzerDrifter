@@ -1,0 +1,4493 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &584900047398493739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3722649709770085961}
+  - component: {fileID: 7002917088797490037}
+  m_Layer: 0
+  m_Name: RightWheel (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3722649709770085961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584900047398493739}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0.00000015081945, z: 0.00000008759915, w: 0.7071068}
+  m_LocalPosition: {x: 0.0069987755, y: -0.78978443, z: 0}
+  m_LocalScale: {x: 0.1891503, y: 0.1891503, z: 0.1891503}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8439239899729732908}
+  m_Father: {fileID: 3009843721998152297}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &7002917088797490037
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584900047398493739}
+  serializedVersion: 2
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.51
+  m_SuspensionSpring:
+    spring: 45000
+    damper: 5500
+    targetPosition: 0.28
+  m_SuspensionDistance: 0.21
+  m_ForceAppPointDistance: 3.32
+  m_Mass: 200
+  m_WheelDampingRate: 3500
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.6
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3.7
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_Enabled: 1
+  m_ProvidesContacts: 0
+--- !u!1 &1482250949259839185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8259218607650917198}
+  - component: {fileID: 8888380348611798945}
+  m_Layer: 0
+  m_Name: LeftWheel (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8259218607650917198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482250949259839185}
+  serializedVersion: 2
+  m_LocalRotation: {x: -1, y: 0.000000010536712, z: 0.000000031610135, w: 0}
+  m_LocalPosition: {x: -2.0137181, y: 1.8103454, z: 0.7654511}
+  m_LocalScale: {x: 0.9794317, y: 0.979451, z: 0.23888983}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2640932995629567970}
+  m_Father: {fileID: 2401827703037900986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &8888380348611798945
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482250949259839185}
+  serializedVersion: 2
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.51
+  m_SuspensionSpring:
+    spring: 45000
+    damper: 5500
+    targetPosition: 0.28
+  m_SuspensionDistance: 0.21
+  m_ForceAppPointDistance: 3.32
+  m_Mass: 200
+  m_WheelDampingRate: 3500
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.6
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3.7
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_Enabled: 1
+  m_ProvidesContacts: 0
+--- !u!1 &2018191291972377515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3576837416439942161}
+  - component: {fileID: 7405790640203053481}
+  m_Layer: 0
+  m_Name: LeftWheel (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3576837416439942161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018191291972377515}
+  serializedVersion: 2
+  m_LocalRotation: {x: -1, y: 0.000000010536712, z: 0.000000031610135, w: 0}
+  m_LocalPosition: {x: -2.0137181, y: 1.8103454, z: 0.2537727}
+  m_LocalScale: {x: 0.9794317, y: 0.979451, z: 0.23888983}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2251293104931079810}
+  m_Father: {fileID: 2401827703037900986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &7405790640203053481
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018191291972377515}
+  serializedVersion: 2
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.51
+  m_SuspensionSpring:
+    spring: 45000
+    damper: 5500
+    targetPosition: 0.28
+  m_SuspensionDistance: 0.21
+  m_ForceAppPointDistance: 3.32
+  m_Mass: 200
+  m_WheelDampingRate: 3500
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.6
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3.7
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_Enabled: 1
+  m_ProvidesContacts: 0
+--- !u!1 &2285925572986684441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 106171785028007953}
+  m_Layer: 0
+  m_Name: RightWheelsMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &106171785028007953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2285925572986684441}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0.00000011920929, z: -0.00000011920929, w: -0.7071068}
+  m_LocalPosition: {x: -0.4009999, y: -0.58100015, z: 0.3513999}
+  m_LocalScale: {x: 0.19312249, y: 0.1931187, z: 0.79178894}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5172752239321331161}
+  m_Father: {fileID: 3009843721998152297}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3003553002085980940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1732646160113478489}
+  m_Layer: 0
+  m_Name: RightWheelsMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1732646160113478489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3003553002085980940}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.70710677, y: -0, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: 0.40182522, y: 0.20498832, z: 0.86778635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3009843721998152297}
+  m_Father: {fileID: 4421539222889301993}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3560376276521933186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4886975687728263144}
+  - component: {fileID: 1398365534766803116}
+  m_Layer: 0
+  m_Name: BulletSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4886975687728263144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3560376276521933186}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.009750048, y: -0, z: -0, w: 0.99995255}
+  m_LocalPosition: {x: 0, y: 0.05, z: 1.751}
+  m_LocalScale: {x: 0.1891503, y: 0.18915026, z: 0.18915015}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 110426370534865537}
+  m_LocalEulerAnglesHint: {x: -1.117, y: 0, z: 0}
+--- !u!114 &1398365534766803116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3560376276521933186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c47669e1d10f34a9ce3a592db37461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 1
+  launchSpeed: 100
+  objectPrefab: {fileID: 9102221054657833148, guid: b45e1c4ea5f51d74ca6696f0f4028e9e, type: 3}
+--- !u!1 &4049783901629172035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8149988465922858902}
+  m_Layer: 0
+  m_Name: LeftWheelsMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8149988465922858902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4049783901629172035}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.70710677, y: -0, z: -0, w: 0.70710677}
+  m_LocalPosition: {x: -0.39817515, y: 0.20498832, z: 0.8677864}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3258657119183132988}
+  m_Father: {fileID: 4421539222889301993}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4135251203311221986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4421539222889301993}
+  - component: {fileID: 1724508513662216552}
+  - component: {fileID: 7370228228792120809}
+  - component: {fileID: 54916841025360266}
+  - component: {fileID: 6165590907908733349}
+  m_Layer: 0
+  m_Name: Tank-Enemy-UV
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4421539222889301993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4135251203311221986}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20, y: 0, z: 0}
+  m_LocalScale: {x: 5.2868, y: 5.2868, z: 5.2868}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1777102458149722269}
+  - {fileID: 5176287559456463323}
+  - {fileID: 5457972180873342638}
+  - {fileID: 1732646160113478489}
+  - {fileID: 2401827703037900986}
+  - {fileID: 8149988465922858902}
+  - {fileID: 8237476808246079052}
+  - {fileID: 110426370534865537}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1724508513662216552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4135251203311221986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481bf0c81d11e4945b37919283dabd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wheels:
+  - {fileID: 4095467367424226499}
+  - {fileID: 8476084595980807040}
+  - {fileID: 7405790640203053481}
+  - {fileID: 8888380348611798945}
+  - {fileID: 4905003611067485025}
+  - {fileID: 7002917088797490037}
+  - {fileID: 9028275777643784583}
+  - {fileID: 4767752183102124805}
+  torque: 550000
+  brakeForce: 400
+  rotationSpeed: 120
+  leftWheels: []
+  rightWheels: []
+  wheelRotationSpeed: 500
+--- !u!54 &7370228228792120809
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4135251203311221986}
+  serializedVersion: 4
+  m_Mass: 10000
+  m_Drag: 0
+  m_AngularDrag: 0.3
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!65 &54916841025360266
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4135251203311221986}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.96, y: 0.53, z: 1.81}
+  m_Center: {x: -0.03, y: 0.53, z: 0.09}
+--- !u!114 &6165590907908733349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4135251203311221986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f309e512b2b9dcc40b51a34508e28370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vertical: 0
+  horizontal: 0
+  handbreak: 0
+  TankWayPoints: {fileID: 0}
+  nodes: []
+  currentWayPoint: {fileID: 0}
+  distanceOffset: 1
+  rotationSpeed: 2.52
+--- !u!1 &5276819738809566003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727578969081174052}
+  - component: {fileID: 4905003611067485025}
+  m_Layer: 0
+  m_Name: RightWheel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1727578969081174052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276819738809566003}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0.00000015081945, z: 0.00000008759915, w: 0.7071068}
+  m_LocalPosition: {x: 0.006996739, y: -1.2022461, z: 0}
+  m_LocalScale: {x: 0.1891503, y: 0.1891503, z: 0.1891503}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1002610946939910453}
+  m_Father: {fileID: 3009843721998152297}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &4905003611067485025
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276819738809566003}
+  serializedVersion: 2
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.51
+  m_SuspensionSpring:
+    spring: 45000
+    damper: 5500
+    targetPosition: 0.28
+  m_SuspensionDistance: 0.21
+  m_ForceAppPointDistance: 3.32
+  m_Mass: 200
+  m_WheelDampingRate: 3500
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.6
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3.7
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_Enabled: 1
+  m_ProvidesContacts: 0
+--- !u!1 &5421291453879846634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7896604637215254740}
+  - component: {fileID: 8476084595980807040}
+  m_Layer: 0
+  m_Name: LeftWheel (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7896604637215254740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421291453879846634}
+  serializedVersion: 2
+  m_LocalRotation: {x: -1, y: 0.000000010536712, z: 0.000000031610135, w: 0}
+  m_LocalPosition: {x: -2.0137162, y: 1.8103458, z: -0.26368672}
+  m_LocalScale: {x: 0.9794317, y: 0.979451, z: 0.23888983}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1221973148113016970}
+  m_Father: {fileID: 2401827703037900986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &8476084595980807040
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421291453879846634}
+  serializedVersion: 2
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.51
+  m_SuspensionSpring:
+    spring: 45000
+    damper: 5500
+    targetPosition: 0.28
+  m_SuspensionDistance: 0.21
+  m_ForceAppPointDistance: 3.32
+  m_Mass: 200
+  m_WheelDampingRate: 3500
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.6
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3.7
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_Enabled: 1
+  m_ProvidesContacts: 0
+--- !u!1 &5441550689870514236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1176375323419748423}
+  m_Layer: 0
+  m_Name: LeftWheelsWOCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1176375323419748423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5441550689870514236}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0019584852, y: -0.72263724, z: -0.12355369}
+  m_LocalScale: {x: 1.0441996, y: 1.0441998, z: 0.25468296}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5871616601964269922}
+  - {fileID: 3773896538224207063}
+  - {fileID: 605547624615260999}
+  - {fileID: 5828482999798776716}
+  - {fileID: 5128283830785244899}
+  - {fileID: 4983098169491138906}
+  - {fileID: 535585831636598690}
+  - {fileID: 4305223633876715122}
+  - {fileID: 7290902956047068743}
+  - {fileID: 8831225498697752395}
+  - {fileID: 2355596528322152123}
+  - {fileID: 5145762498891005352}
+  - {fileID: 4164268819067318914}
+  - {fileID: 6530909237463410667}
+  - {fileID: 2771225725065441472}
+  m_Father: {fileID: 2401827703037900986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6452290655959670733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 110426370534865537}
+  - component: {fileID: 7870666443255374128}
+  m_Layer: 0
+  m_Name: turret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &110426370534865537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6452290655959670733}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.002043314, y: 0.61498827, z: 0.025944937}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3345366725233745011}
+  - {fileID: 4886975687728263144}
+  - {fileID: 5123585267480989295}
+  m_Father: {fileID: 4421539222889301993}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7870666443255374128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6452290655959670733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b4fe2057998fc48980c9c2e199b921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 182.7
+  enemyTag: Enemy
+  Turret: {fileID: 110426370534865537}
+  turretRotationSpeed: 10
+  tankBody: {fileID: 4421539222889301993}
+  launchSpeed: 100
+  objectPrefab: {fileID: 9102221054657833148, guid: b45e1c4ea5f51d74ca6696f0f4028e9e, type: 3}
+--- !u!1 &6720924213431888331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5172752239321331161}
+  m_Layer: 0
+  m_Name: RightWheelsWOCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5172752239321331161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6720924213431888331}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2883334813918194965}
+  - {fileID: 891505025112650128}
+  - {fileID: 5696892047921817248}
+  - {fileID: 375391217277282022}
+  - {fileID: 2480334849878212511}
+  - {fileID: 1222907587199401636}
+  - {fileID: 9101574158530776411}
+  - {fileID: 7353353094763428134}
+  - {fileID: 4521895084695236218}
+  - {fileID: 3830618014585214832}
+  - {fileID: 9165300468159711718}
+  - {fileID: 2208874951103159504}
+  - {fileID: 4946489761191660098}
+  - {fileID: 7300037726463473652}
+  - {fileID: 5229054773887240421}
+  m_Father: {fileID: 106171785028007953}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7394454981644976600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6076145850645253501}
+  - component: {fileID: 4767752183102124805}
+  m_Layer: 0
+  m_Name: RightWheel (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6076145850645253501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7394454981644976600}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0.00000015081945, z: 0.00000008759915, w: 0.7071068}
+  m_LocalPosition: {x: 0.0070100343, y: 0.025075676, z: 0}
+  m_LocalScale: {x: 0.1891503, y: 0.1891503, z: 0.1891503}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5795813696640317838}
+  m_Father: {fileID: 3009843721998152297}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &4767752183102124805
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7394454981644976600}
+  serializedVersion: 2
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.51
+  m_SuspensionSpring:
+    spring: 45000
+    damper: 5500
+    targetPosition: 0.28
+  m_SuspensionDistance: 0.21
+  m_ForceAppPointDistance: 3.32
+  m_Mass: 200
+  m_WheelDampingRate: 3500
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.6
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3.7
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_Enabled: 1
+  m_ProvidesContacts: 0
+--- !u!1 &7900902176323490136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2401827703037900986}
+  m_Layer: 0
+  m_Name: LeftWheelsMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2401827703037900986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7900902176323490136}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: -0.017, y: 0.4612, z: -0.0596}
+  m_LocalScale: {x: 0.19312249, y: 0.1931187, z: 0.7917889}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1176375323419748423}
+  - {fileID: 8259218607650917198}
+  - {fileID: 3576837416439942161}
+  - {fileID: 7896604637215254740}
+  - {fileID: 1432007672228473310}
+  m_Father: {fileID: 4421539222889301993}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8006193005388445360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1432007672228473310}
+  - component: {fileID: 4095467367424226499}
+  m_Layer: 0
+  m_Name: LeftWheel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1432007672228473310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006193005388445360}
+  serializedVersion: 2
+  m_LocalRotation: {x: -1, y: 0.000000010536712, z: 0.000000031610135, w: 0}
+  m_LocalPosition: {x: -2.0137181, y: 1.8103458, z: -0.78461003}
+  m_LocalScale: {x: 0.9794317, y: 0.979451, z: 0.23888983}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6898088048212705368}
+  m_Father: {fileID: 2401827703037900986}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &4095467367424226499
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006193005388445360}
+  serializedVersion: 2
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.51
+  m_SuspensionSpring:
+    spring: 45000
+    damper: 5500
+    targetPosition: 0.28
+  m_SuspensionDistance: 0.21
+  m_ForceAppPointDistance: 3.32
+  m_Mass: 200
+  m_WheelDampingRate: 3500
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.6
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3.7
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_Enabled: 1
+  m_ProvidesContacts: 0
+--- !u!1 &8035147911263985942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3258657119183132988}
+  m_Layer: 0
+  m_Name: LeftWheels-WithCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3258657119183132988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8035147911263985942}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.00000025288105, w: 1}
+  m_LocalPosition: {x: 0, y: 1.3349997, z: -0.0934}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8149988465922858902}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8101729030699374170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3009843721998152297}
+  m_Layer: 0
+  m_Name: RightWheels-WithCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3009843721998152297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8101729030699374170}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.00000016858739, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5099999, z: -0.0934}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 106171785028007953}
+  - {fileID: 1727578969081174052}
+  - {fileID: 3722649709770085961}
+  - {fileID: 2837331234875945321}
+  - {fileID: 6076145850645253501}
+  m_Father: {fileID: 1732646160113478489}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8409550020474328447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2837331234875945321}
+  - component: {fileID: 9028275777643784583}
+  m_Layer: 0
+  m_Name: RightWheel (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2837331234875945321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409550020474328447}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0.00000015081945, z: 0.00000008759915, w: 0.7071068}
+  m_LocalPosition: {x: 0.007002601, y: -0.38006568, z: 0}
+  m_LocalScale: {x: 0.1891503, y: 0.1891503, z: 0.1891503}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2653820376908261727}
+  m_Father: {fileID: 3009843721998152297}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &9028275777643784583
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409550020474328447}
+  serializedVersion: 2
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.51
+  m_SuspensionSpring:
+    spring: 45000
+    damper: 5500
+    targetPosition: 0.28
+  m_SuspensionDistance: 0.21
+  m_ForceAppPointDistance: 3.32
+  m_Mass: 200
+  m_WheelDampingRate: 3500
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.6
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 3.7
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_Enabled: 1
+  m_ProvidesContacts: 0
+--- !u!1 &8822371670474282496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8237476808246079052}
+  m_Layer: 0
+  m_Name: Suspencion-RuedasSuperiores
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8237476808246079052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8822371670474282496}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4421539222889301993}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &64300559231031369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9960117
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0503607
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4203877
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &535585831636598690 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 64300559231031369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &197895805462397197
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0450583
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4064711
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.009985661
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &375391217277282022 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 197895805462397197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &748516890438541022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1727578969081174052}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42881316
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.61260015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42881173
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0057861954
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &1002610946939910453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 748516890438541022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &852863019106817659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0450566
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49511108
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.61375624
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &891505025112650128 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 852863019106817659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1147836427837068460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9960122
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.122961
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.2964904
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &605547624615260999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 1147836427837068460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1689441972350818639
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0450583
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.40333682
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17250247
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &1222907587199401636 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 1689441972350818639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1693330816369360737
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7896604637215254740}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42881295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6126
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42881164
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.001567994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &1221973148113016970 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 1693330816369360737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1780199879688675689
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3576837416439942161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42881295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6126
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42881164
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.043830927
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &2251293104931079810 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 1780199879688675689}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1814169369031113531
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13470002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5522699
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.55226994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0812979
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.88512754
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.9479634
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49991277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5000873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e7fd389590dbe174a9cc524656adad59, type: 2}
+    - target: {fileID: 919132149155446097, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda1UV (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+--- !u!4 &2208874951103159504 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+  m_PrefabInstance: {fileID: 1814169369031113531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2243690057875701622
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4421539222889301993}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19312249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19311875
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7917891
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0017392993
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47387722
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.067769535
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: efd4023f685edda4a862f7663d78f4de, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H CuerpoUV
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+--- !u!4 &1777102458149722269 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0165437663842af4bae94c9cd68d2adb, type: 3}
+  m_PrefabInstance: {fileID: 2243690057875701622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2449930023248746283
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40222177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746026
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4022218
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.930353
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.392155
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.42640963
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &2771225725065441472 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 2449930023248746283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2534616109867771913
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8259218607650917198}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42881295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6126
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42881164
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17833081
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &2640932995629567970 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 2534616109867771913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2548750343575047860
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2837331234875945321}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42881316
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.61260015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42881173
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.000017178492
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.051085655
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &2653820376908261727 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 2548750343575047860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2729553124774533236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.045058
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4146006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.29123065
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &2480334849878212511 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 2729553124774533236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2826707998099136848
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.57460254
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746027
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.57460254
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.954744
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9651817
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9713545
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e7fd389590dbe174a9cc524656adad59, type: 2}
+    - target: {fileID: 919132149155446097, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda1UV
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+--- !u!4 &2355596528322152123 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+  m_PrefabInstance: {fileID: 2826707998099136848}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3019549418279238552
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 110426370534865537}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20165883
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.20165507
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20165507
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -3.5527133e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 305024dff0ed9594a848820ad1ce753e, type: 2}
+    - target: {fileID: 919132149155446097, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H TorretaUV
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+--- !u!4 &3345366725233745011 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1123a65083c331047b5a1f7953a73756, type: 3}
+  m_PrefabInstance: {fileID: 3019549418279238552}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3425287416576019198
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.045058
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.538207
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7737409
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &2883334813918194965 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 3425287416576019198}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3648953313198420123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0450578
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37258217
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.65866756
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &3830618014585214832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 3648953313198420123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3734939386757989180
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9960103
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1642325
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9247543
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &3773896538224207063 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 3734939386757989180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4128189946599393681
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0450585
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.378263
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3250338
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &4521895084695236218 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 4128189946599393681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4338518301986251161
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9960115
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0828153
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.059656322
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &4305223633876715122 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 4338518301986251161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4485810697514734953
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40222177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746026
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4022218
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9303523
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3717065
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4719777
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &4164268819067318914 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 4485810697514734953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4638539808766983728
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4421539222889301993}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.009656125
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -0.009656125
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalScale.z
+      value: -0.009656125
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.40182504
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2549883
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.072214
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c066d8578c5c6ab4fb73db1fa4675165, type: 2}
+    - target: {fileID: 919132149155446097, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_Name
+      value: DerechaOrugasUV
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+--- !u!4 &5176287559456463323 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+  m_PrefabInstance: {fileID: 4638539808766983728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4652245743314954628
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 110426370534865537}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03144246
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.040546257
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.031442456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0036188213
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.038004637
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17456327
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 7.1054265e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 7.1054265e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 74c080642c215154d8ea15eb849453de, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H CanonUV
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+--- !u!4 &5123585267480989295 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8568dced657caf84190e120a088cf3fc, type: 3}
+  m_PrefabInstance: {fileID: 4652245743314954628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4657262443320842504
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9960122
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.08713
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6583752
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &5128283830785244899 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 4657262443320842504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4675812593675393603
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.52889293
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.528893
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5288929
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9603702
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.53774
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.2072587
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.49999994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e7fd389590dbe174a9cc524656adad59, type: 2}
+    - target: {fileID: 919132149155446097, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda1UV (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+--- !u!4 &5145762498891005352 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+  m_PrefabInstance: {fileID: 4675812593675393603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4804562482655284913
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9960122
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0763429
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1624501
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &4983098169491138906 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 4804562482655284913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4841316030751108521
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.102439076
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1126406
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.777209
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.014954513
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49991277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5000873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &4946489761191660098 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 4841316030751108521}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5225816447768183115
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0450585
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.45201543
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.45374766
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &5696892047921817248 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 5225816447768183115}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5491055328954288453
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4421539222889301993}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.009656125
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -0.009656125
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalScale.z
+      value: -0.009656125
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.39817506
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2549883
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.07221403
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000029802319
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c066d8578c5c6ab4fb73db1fa4675165, type: 2}
+    - target: {fileID: 919132149155446097, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+      propertyPath: m_Name
+      value: IzquierdaOrugasUV
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+--- !u!4 &5457972180873342638 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 43aff2fa9a74fe0459a513ab1f030535, type: 3}
+  m_PrefabInstance: {fileID: 5491055328954288453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5700410207870480142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.102439076
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.112641
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.7559551
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5060168
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49991277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5000873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &5229054773887240421 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 5700410207870480142}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6266360092831037065
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9960108
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2054102
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.552926
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &5871616601964269922 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 6266360092831037065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6298379827134440551
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9960122
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0792507
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.52433616
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &5828482999798776716 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 6298379827134440551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6333297631563587173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6076145850645253501}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42881316
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.61260015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42881173
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00006477334
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18578534
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &5795813696640317838 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 6333297631563587173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6354675785100126131
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1432007672228473310}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42881295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6126
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42881164
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.001567994
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &6898088048212705368 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 6354675785100126131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6712837500998483968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40222177
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746026
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4022218
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9303534
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4272351
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5404602
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &6530909237463410667 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 6712837500998483968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7027553666300763853
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.045057
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.40999702
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.13874722
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &7353353094763428134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 7027553666300763853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7108022584385112492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.996012
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0523305
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7613562
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &7290902956047068743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 7108022584385112492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7116893437834776607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.102439076
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1126401
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8139385
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.51588273
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49991277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5000873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &7300037726463473652 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 7116893437834776607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8256376319421235911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3722649709770085961}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42881316
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.61260015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42881173
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0057861954
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8c5e981be2d0fa4289c450307311198, type: 2}
+    - target: {fileID: 919132149155446097, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda2UV (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+--- !u!4 &8439239899729732908 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57445d4bb451ae845b8c6f4981934f3b, type: 3}
+  m_PrefabInstance: {fileID: 8256376319421235911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8699557319548923405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.14634147
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5999998
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0861945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3314619
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1349902
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49991277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4999127
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5000873
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e7fd389590dbe174a9cc524656adad59, type: 2}
+    - target: {fileID: 919132149155446097, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda1UV (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+--- !u!4 &9165300468159711718 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 108d9c3ebb3dd4648821e8428f510100, type: 3}
+  m_PrefabInstance: {fileID: 8699557319548923405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8774683352841546416
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5172752239321331161}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.051219527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.21000002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0450585
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37620616
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4928777
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &9101574158530776411 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 8774683352841546416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9008441360960534688
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1176375323419748423}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20111091
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5746028
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20111096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9960108
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0468901
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.0713532
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd350ef8265992049ac8060c0d5baaec, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+      propertyPath: m_Name
+      value: Tanque Panzer IV H Rueda3UV (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+--- !u!4 &8831225498697752395 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0fcaacda82c9c4f4fb2ee83ce7d4e73d, type: 3}
+  m_PrefabInstance: {fileID: 9008441360960534688}
+  m_PrefabAsset: {fileID: 0}

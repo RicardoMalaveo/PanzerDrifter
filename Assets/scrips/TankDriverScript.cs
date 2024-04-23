@@ -7,8 +7,8 @@ public class TankDriverScript : MonoBehaviour
 {
     private inputManager IM;
     public WheelCollider[] wheels = new WheelCollider[8];
-    public float torque = 1000F;
-    public float brakeForce = 400.0f;
+    public float torque = 550000F;
+    public float brakeForce = 1000000000000f;
     public float rotationSpeed = 100.0f;
     private Rigidbody rb;
     private float rotationInput;
@@ -25,7 +25,7 @@ public class TankDriverScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        RotateWheel(/*IM.vertical, IM.horizontal*/);
+        RotateWheel();
         Acceleration();
         RotateTank();
         Breaks();
@@ -68,7 +68,7 @@ public class TankDriverScript : MonoBehaviour
 
          rb.MoveRotation(rb.rotation * turnRotation);
     }
-    void RotateWheel(/*float moveInput, float rotationInput*/)
+    void RotateWheel()
     {
         float WheelRotation = IM.vertical * wheelRotationSpeed * Time.fixedDeltaTime;
         //move the left wheels
@@ -76,7 +76,7 @@ public class TankDriverScript : MonoBehaviour
         {
             if (wheel != null)
             {
-                wheel.transform.Rotate(WheelRotation - IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f, 0.0f);
+                wheel.transform.Rotate( 0.0f, WheelRotation - IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f);
             }
         }
         //move the right wheels
@@ -84,7 +84,7 @@ public class TankDriverScript : MonoBehaviour
         {
             if (wheel != null)
             {
-                wheel.transform.Rotate(WheelRotation + IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f, 0.0f);
+                wheel.transform.Rotate(0.0f, WheelRotation + IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f);
             }
         }
     }

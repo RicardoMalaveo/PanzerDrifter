@@ -8,10 +8,13 @@ public class bulletHandlerAI : MonoBehaviour
     private float fireCountDown = 0F;
     public float launchSpeed = 100.0f;
     public GameObject objectPrefab;
+    private AudioSource sonidoDisparo;
     void Update()
     {
         if (fireCountDown <= 0F)
         {
+            sonidoDisparo = GetComponent<AudioSource>();
+            sonidoDisparo.PlayOneShot(sonidoDisparo.clip);
             Shoot();
             fireCountDown = 1F / fireRate;
         }

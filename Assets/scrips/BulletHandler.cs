@@ -6,6 +6,7 @@ public class BulletHandler : MonoBehaviour
 {
     public float launchSpeed = 100.0f;
     public GameObject objectPrefab;
+    private AudioSource sonidoDisparo;
 
     void Start()
     {
@@ -17,6 +18,8 @@ public class BulletHandler : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0)) 
         {
+            sonidoDisparo = GetComponent<AudioSource>();
+            sonidoDisparo.PlayOneShot(sonidoDisparo.clip);
             SpawnObject(); 
         }
     }

@@ -11,13 +11,11 @@ public class turretRotationAI : MonoBehaviour
     public Transform Turret;
     public float turretRotationSpeed = 15F;
     public Transform tankBody;
-
-
-    public float launchSpeed = 100.0f;
+    public float launchSpeed = 300F;
     public GameObject objectPrefab;
     private void Start()
     {
-        InvokeRepeating("UpdateTarget", 0F, 2F);
+        InvokeRepeating("UpdateTarget", 0F, 1F);
     }
     void UpdateTarget()
     {

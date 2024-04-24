@@ -6,7 +6,7 @@ public class bulletHandlerAI : MonoBehaviour
 {
     public float fireRate = 1F;
     private float fireCountDown = 0F;
-    public float launchSpeed = 100.0f;
+    public float launchSpeed = 450F;
     public GameObject objectPrefab;
     void Update()
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletHandler : MonoBehaviour
 {
-    public float launchSpeed = 100.0f;
+    public float launchSpeed = 1000F;
     public GameObject objectPrefab;
 
     void Start()

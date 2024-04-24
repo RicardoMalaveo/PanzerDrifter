@@ -5,8 +5,12 @@ using UnityEngine;
 public class AIController : MonoBehaviour
 {
     private AIInputManager AIM;
-    public WheelCollider[] wheels = new WheelCollider[8];
-    public float torque = 550000F;
+    public WheelCollider[] wheelsRight = new WheelCollider[4];
+    public WheelCollider[] wheelsLeft = new WheelCollider[4];
+    public float torqueRight = 550000F;
+    public float torqueLeft = 550000F;
+    public float torqueMaxRight = 550000F;
+    public float torqueMaxLeft = 550000F;
     public float brakeForce = 0F;
     public float rotationSpeed = 140F;
     private Rigidbody rb;
@@ -32,9 +36,14 @@ public class AIController : MonoBehaviour
 
     public void Acceleration()
     {
-        for (int i = 0; i < wheels.Length; i++)
+        for (int i = 0; i < wheelsRight.Length; i++)
         {
-            wheels[i].motorTorque = AIM.vertical * torque;
+            wheelsRight[i].motorTorque = AIM.vertical * torqueRight;
+        }
+
+        for (int i = 0; i < wheelsLeft.Length; i++)
+        {
+            wheelsLeft[i].motorTorque = AIM.vertical * torqueLeft;
         }
     }
 
@@ -42,16 +51,31 @@ public class AIController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            for (int i = 0; i < wheels.Length; i++)
+            for (int i = 0; i < wheelsRight.Length; i++)
             {
-                wheels[i].brakeTorque = brakeForce;
+                wheelsRight[i].brakeTorque = brakeForce;
             }
         }
         else
         {
-            for (int i = 0; i < wheels.Length; i++)
+            for (int i = 0; i < wheelsRight.Length; i++)
             {
-                wheels[i].brakeTorque = 0F;
+                wheelsRight[i].brakeTorque = 0F;
+            }
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            for (int i = 0; i < wheelsLeft.Length; i++)
+            {
+                wheelsLeft[i].brakeTorque = brakeForce;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < wheelsLeft.Length; i++)
+            {
+                wheelsLeft[i].brakeTorque = 0F;
             }
         }
     }

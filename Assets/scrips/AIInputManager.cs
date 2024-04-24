@@ -41,13 +41,6 @@ public class AIInputManager : MonoBehaviour
 
         horizontal = (relative.x / relative.magnitude) * rotationSpeed;
     }
-    private void Keyboard()
-    {
-        vertical = Input.GetAxis("Vertical");
-        horizontal = Input.GetAxis("Horizontal");
-        handbreak = (Input.GetAxis("Jump") != 0) ? true : false;
-    }
-
     private void WayPointDistanceCalculator()
     {
         Vector3 position = gameObject.transform.position;

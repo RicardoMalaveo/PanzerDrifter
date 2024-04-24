@@ -14,8 +14,8 @@ public class TankDriverScript : MonoBehaviour
     public WheelCollider[] wheelsLeft = new WheelCollider[4];
     public float torqueRight = 550000F;
     public float torqueLeft = 550000F;
-    private float torqueMaxRight = 550000F;
-    private float torqueMaxLeft = 550000F;
+    public float torqueMaxRight = 550000F;
+    public float torqueMaxLeft = 550000F;
     private float brakeForce = 1000000000000f;
     public float rotationSpeed = 100.0f;
     private Rigidbody rb;
@@ -177,6 +177,4 @@ public class TankDriverScript : MonoBehaviour
     {
         IM = GetComponent<inputManager>();
     }
-
-
 }

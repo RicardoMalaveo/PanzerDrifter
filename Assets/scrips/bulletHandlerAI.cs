@@ -8,6 +8,7 @@ public class bulletHandlerAI : MonoBehaviour
     private float fireCountDown = 0F;
     public float launchSpeed = 450F;
     public GameObject objectPrefab;
+    private AudioSource sonidoDisparo;
     void Update()
     {
         if (fireCountDown <= 0F)
@@ -19,6 +20,9 @@ public class bulletHandlerAI : MonoBehaviour
     }
     void Shoot()
     {
+        sonidoDisparo = GetComponent<AudioSource>();
+        sonidoDisparo.PlayOneShot(sonidoDisparo.clip);
+
         Vector3 SpawnPosition = transform.position;
         Quaternion spawnRotation = Quaternion.identity;
 

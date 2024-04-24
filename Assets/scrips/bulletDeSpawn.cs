@@ -76,43 +76,28 @@ public class bulletDeSpawn : MonoBehaviour
 
         TankDriverScript DamageControl = FindAnyObjectByType<TankDriverScript>();
 
-        if (DamageControl.torqueLeft == DamageControl.torqueMaxLeft)
+        if (DamageControl.torqueLeft < DamageControl.torqueMaxLeft)
         {
-            //DamageControl.torqueLeft = DamageControl.torqueMaxLeft;
-        }
-        else
-        {
-            DamageControl.torqueLeft += torqueRecover * Time.deltaTime / 2F;
+            DamageControl.torqueLeft += torqueRecover * Time.deltaTime / 4;
         }
 
-        if (DamageControl.torqueRight == DamageControl.torqueMaxRight)
+
+        if (DamageControl.torqueRight < DamageControl.torqueMaxRight)
         {
-            //DamageControl.torqueRight = DamageControl.torqueMaxRight;
-        }
-        else
-        {
-            DamageControl.torqueRight += torqueRecover * Time.deltaTime / 2F;
+            DamageControl.torqueRight += torqueRecover * Time.deltaTime/4;
         }
 
 
         AIController AIDamageControl = FindAnyObjectByType<AIController>();
 
-        if (AIDamageControl.torqueLeft == AIDamageControl.torqueMaxLeft)
+        if (AIDamageControl.torqueLeft < AIDamageControl.torqueMaxLeft)
         {
-            //AIDamageControl.torqueLeft = AIDamageControl.torqueMaxLeft;
-        }
-        else
-        {
-            AIDamageControl.torqueLeft += torqueRecover * Time.deltaTime / 2F;
+            AIDamageControl.torqueLeft += torqueRecover * Time.deltaTime / 4;
         }
 
-        if (AIDamageControl.torqueRight == AIDamageControl.torqueMaxRight)
+        if (AIDamageControl.torqueRight < AIDamageControl.torqueMaxRight)
         {
-            //AIDamageControl.torqueRight = AIDamageControl.torqueMaxRight;
-        }
-        else
-        {
-            AIDamageControl.torqueRight += torqueRecover * Time.deltaTime / 2F;
+            AIDamageControl.torqueRight += torqueRecover * Time.deltaTime / 4;
         }
     }
 }

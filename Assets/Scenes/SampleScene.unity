@@ -8731,6 +8731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank-Enemy-UV
       objectReference: {fileID: 0}
+    - target: {fileID: 4135251203311221986, guid: d01c3ec258ba5124f88d13c22316e967, type: 3}
+      propertyPath: m_TagString
+      value: AIEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4421539222889301993, guid: d01c3ec258ba5124f88d13c22316e967, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20

@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class RotationControlledMouse : MonoBehaviour
 {
-    [SerializeField][Range(0, 10)] float rotationSpeed = 0.5f;
-    public Transform objectToFollowFree;
+    [SerializeField][Range(0, 10)] float rotationSpeed;
+    private float negativeAngle = -0.003F;
+    private float positiveAngle = 0.003F;
+    public Transform tankBody;
+    public Transform turretPoint;
 
     Camera cam = null;
 
@@ -26,10 +29,36 @@ public class RotationControlledMouse : MonoBehaviour
         }
         else
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Vector3 PointToScreen = Camera.main.WorldToScreenPoint(turretPoint.position);
+            float screenDiference = (PointToScreen.x - Input.mousePosition.x)/ Screen.width;
 
-           Cursor.lockState = CursorLockMode.Locked;
+                if(screenDiference > 0) 
+                {
+                    if (screenDiference > positiveAngle)
+                    {
+                    transform.RotateAround(transform.position, tankBody.up, 10F * rotationSpeed * Time.deltaTime);
+                    }
+                    
+                }
 
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+                if (screenDiference < 0) 
+                {
+                    if (screenDiference < negativeAngle)
+                    {
+                    transform.RotateAround(transform.position, tankBody.up, -10F * rotationSpeed * Time.deltaTime);
+                    }
+                   
+                }
+
+
+
+            /* if (screenDiference < rotationSpeed) 
+             {
+                 transform.RotateAround(transform.position, tankBody.up, screenDiference * rotationSpeed * Time.deltaTime);
+             }*/
+
+           /* Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             Vector3 mouseDirection = ray.direction;
             mouseDirection.y = 0;
             Quaternion targetRotation = Quaternion.LookRotation(mouseDirection);
@@ -40,12 +69,16 @@ public class RotationControlledMouse : MonoBehaviour
             // will always be positive (or zero)
             if (angularDifference > 0) 
             {
-                transform.rotation = Quaternion.Slerp(currentRotation, targetRotation, (rotationSpeed * 180 * Time.deltaTime) / angularDifference);
+                if(Input.mousePosition.x< Screen.width/2)
+                { 
+                    angularDifference = -angularDifference;
+                }
             }  
             else 
             {
-                transform.rotation = targetRotation;
-            }    
+                //transform.rotation = targetRotation;
+            }
+            //Quaternion.Slerp(currentRotation, targetRotation, (rotationSpeed * 180 * Time.deltaTime) / angularDifference);*/
         }
     }
 }

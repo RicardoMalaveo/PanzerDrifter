@@ -14,13 +14,6 @@ public class CameraFollowTank : MonoBehaviour
     public float lookSpeed = 10;
     [SerializeField][Range(0, 10)] float rotationSpeed = 0.5f;
 
-    Camera cam = null;
-
-    void Start()
-    {
-        cam = Camera.main;
-    }
-
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift))

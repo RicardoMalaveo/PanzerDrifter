@@ -57,7 +57,6 @@ public class AIInputManager : MonoBehaviour
             }
         }
     }
-
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(currentWayPoint.position, 3);

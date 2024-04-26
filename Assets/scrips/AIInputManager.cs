@@ -28,7 +28,7 @@ public class AIInputManager : MonoBehaviour
 
     private void AIDrive()
     {
-        vertical = 1F;
+        vertical = 0.7F;
         AIRotation();
     }
     private void AIRotation()

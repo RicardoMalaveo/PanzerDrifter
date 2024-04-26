@@ -5,33 +5,32 @@ using UnityEngine;
 public class canonRotation : MonoBehaviour
 {
     [SerializeField][Range(0, 10)] float rotationSpeed;
-    private float negativeAngle = -0.003F;
-    private float positiveAngle = 0.003F;
-    public Transform tankBody;
-    public Transform canonPoint;
+    public Transform cannon;
+    public Transform Tankbody;
+    private float negativeAngle = -0.007F;
+    private float positiveAngle = 0.007F;
+
     void Update()
     {
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Vector3 PointToScreen = Camera.main.WorldToScreenPoint(canonPoint.position);
+        Vector3 PointToScreen = Camera.main.WorldToScreenPoint(cannon.position);
         float screenDiference = (PointToScreen.y - Input.mousePosition.y) / Screen.height;
+
 
         if (screenDiference > 0)
         {
             if (screenDiference > positiveAngle)
             {
-                transform.RotateAround(transform.position, tankBody.right, -5F * rotationSpeed * Time.deltaTime);
-            }
-
+                transform.RotateAround(transform.position, Tankbody.right, 5F * rotationSpeed * Time.deltaTime);
+            }  
         }
-
         if (screenDiference < 0)
         {
             if (screenDiference < negativeAngle)
             {
-                transform.RotateAround(transform.position, tankBody.right, 5F * rotationSpeed * Time.deltaTime);
-            }
-
+                transform.RotateAround(transform.position, Tankbody.right, -5F * rotationSpeed * Time.deltaTime);
+            }    
         }
     }
 }
+

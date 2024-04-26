@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 5987.6255, g: 3556.6392, b: 2380.2385, a: 1}
+  m_IndirectSpecularColor: {r: 5526.36, g: 3078.3345, b: 1734.6995, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -421,7 +421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 209.3, y: 32.199997}
+  m_AnchoredPosition: {x: 209.30005, y: 32.19995}
   m_SizeDelta: {x: 100, y: 62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &41846575
@@ -3455,7 +3455,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 52.5, y: 30.7}
+  m_AnchoredPosition: {x: 52.5, y: 30.699951}
   m_SizeDelta: {x: 100, y: 62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938983762
@@ -6144,14 +6144,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574151651}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5d8a7f7088cccd44bd9e5771f35421f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
-  tankBody: {fileID: 534972569}
-  canonPoint: {fileID: 3274524972988705669}
+  cannon: {fileID: 6580879230113866608}
+  Tankbody: {fileID: 722821789039196038}
+  negativeAngle: -0.05
+  positiveAngle: 0.05
 --- !u!1 &1578169651
 GameObject:
   m_ObjectHideFlags: 0
@@ -11839,7 +11841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd30b68e4a6fe804a92d65c03138f683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 7
+  rotationSpeed: 6.5
   tankBody: {fileID: 1113681738}
   turretPoint: {fileID: 1792904200}
 --- !u!1001 &4202031630555815991
@@ -12140,7 +12142,7 @@ GameObject:
   - component: {fileID: 3274524972988705669}
   m_Layer: 0
   m_Name: CameraFollowTurret
-  m_TagString: Untagged
+  m_TagString: Turret Point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12467,7 +12469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spinSpeed: 120
-  tankCam: {fileID: 963194228}
 --- !u!1001 &5855345694829439655
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,8 +5,8 @@ using UnityEngine;
 public class RotationControlledMouse : MonoBehaviour
 {
     [SerializeField][Range(0, 10)] float rotationSpeed;
-    private float negativeAngle = -0.003F;
-    private float positiveAngle = 0.003F;
+    private float negativeAngle = -0.007F;
+    private float positiveAngle = 0.007F;
     public Transform tankBody;
     public Transform turretPoint;
 
@@ -37,7 +37,7 @@ public class RotationControlledMouse : MonoBehaviour
                 {
                     if (screenDiference > positiveAngle)
                     {
-                    transform.RotateAround(transform.position, tankBody.up, 10F * rotationSpeed * Time.deltaTime);
+                    transform.RotateAround(transform.position, tankBody.up, 7.5F * rotationSpeed * Time.deltaTime);
                     }
                     
                 }
@@ -46,39 +46,10 @@ public class RotationControlledMouse : MonoBehaviour
                 {
                     if (screenDiference < negativeAngle)
                     {
-                    transform.RotateAround(transform.position, tankBody.up, -10F * rotationSpeed * Time.deltaTime);
+                    transform.RotateAround(transform.position, tankBody.up, -7.5F * rotationSpeed * Time.deltaTime);
                     }
                    
                 }
-
-
-
-            /* if (screenDiference < rotationSpeed) 
-             {
-                 transform.RotateAround(transform.position, tankBody.up, screenDiference * rotationSpeed * Time.deltaTime);
-             }*/
-
-           /* Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            Vector3 mouseDirection = ray.direction;
-            mouseDirection.y = 0;
-            Quaternion targetRotation = Quaternion.LookRotation(mouseDirection);
-
-            Quaternion currentRotation = transform.rotation;
-            float angularDifference = Quaternion.Angle(currentRotation, targetRotation);
-
-            // will always be positive (or zero)
-            if (angularDifference > 0) 
-            {
-                if(Input.mousePosition.x< Screen.width/2)
-                { 
-                    angularDifference = -angularDifference;
-                }
-            }  
-            else 
-            {
-                //transform.rotation = targetRotation;
-            }
-            //Quaternion.Slerp(currentRotation, targetRotation, (rotationSpeed * 180 * Time.deltaTime) / angularDifference);*/
         }
     }
 }

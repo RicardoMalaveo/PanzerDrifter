@@ -7,6 +7,10 @@ public class BulletHandler : MonoBehaviour
     public float launchSpeed = 100.0f;
     public GameObject objectPrefab;
     private AudioSource sonidoDisparo;
+    public GameObject BulletSpawn;
+    public RectTransform crosshair;
+    public Camera cam;
+
 
     void Start()
     {
@@ -16,6 +20,15 @@ public class BulletHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+                RaycastHit hit;
+        if (Physics.Raycast(BulletSpawn.transform.position, BulletSpawn.transform.forward, out hit))
+        {
+            if (hit.collider)
+            {
+                crosshair.position = cam.WorldToScreenPoint(hit.point);
+            }
+        }
+
         if(Input.GetKeyDown(KeyCode.Mouse0)) 
         {
             sonidoDisparo = GetComponent<AudioSource>();
@@ -23,7 +36,6 @@ public class BulletHandler : MonoBehaviour
             SpawnObject(); 
         }
     }
- 
 
     void SpawnObject() 
     {

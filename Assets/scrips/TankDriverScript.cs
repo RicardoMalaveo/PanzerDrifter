@@ -16,14 +16,15 @@ public class TankDriverScript : MonoBehaviour
     public float torqueLeft = 550000F;
     public float torqueMaxRight = 550000F;
     public float torqueMaxLeft = 550000F;
-    private float brakeForce = 1000000000000f;
+    private float brakeForce = 1000000F;
     public float rotationSpeed = 100.0f;
     private Rigidbody rb;
     private float rotationInput;
     public GameObject[] leftWheels;
     public GameObject[] rightWheels;
     public float wheelRotationSpeed = 500.0f;
-
+    public float KPH;
+    private Rigidbody rigidbody;
 
     void Start()
     {
@@ -106,6 +107,7 @@ public class TankDriverScript : MonoBehaviour
         {
             wheelsLeft[i].motorTorque = IM.vertical * torqueRight;
         }
+        KPH = rigidbody.velocity.magnitude * 3.6F;
     }
 
     public void Breaks()
@@ -176,5 +178,6 @@ public class TankDriverScript : MonoBehaviour
     private void getIM()
     {
         IM = GetComponent<inputManager>();
+        rigidbody = GetComponent<Rigidbody>();
     }
 }

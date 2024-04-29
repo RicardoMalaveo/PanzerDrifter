@@ -8,6 +8,12 @@ TagManager:
   - Enemy
   - AIEnemy
   - Turret Point
+  - PlayerOD
+  - PlayerOL
+  - AIOD
+  - AIOL
+  - PlayerTBody
+  - AITBody
   layers:
   - Default
   - TransparentFX

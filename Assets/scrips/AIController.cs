@@ -12,7 +12,7 @@ public class AIController : MonoBehaviour
     public float torqueMaxRight = 550000F;
     public float torqueMaxLeft = 550000F;
     public float brakeForce = 0F;
-    public float rotationSpeed = 140F;
+    private float rotationSpeed = 100F;
     private Rigidbody rb;
     private float rotationInput;
     public GameObject[] leftWheels;
@@ -31,7 +31,6 @@ public class AIController : MonoBehaviour
         RotateWheel();
         Acceleration();
         RotateTank();
-        Breaks();
     }
 
     public void Acceleration()
@@ -44,39 +43,6 @@ public class AIController : MonoBehaviour
         for (int i = 0; i < wheelsLeft.Length; i++)
         {
             wheelsLeft[i].motorTorque = AIM.vertical * torqueLeft;
-        }
-    }
-
-    public void Breaks()
-    {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            for (int i = 0; i < wheelsRight.Length; i++)
-            {
-                wheelsRight[i].brakeTorque = brakeForce;
-            }
-        }
-        else
-        {
-            for (int i = 0; i < wheelsRight.Length; i++)
-            {
-                wheelsRight[i].brakeTorque = 0F;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            for (int i = 0; i < wheelsLeft.Length; i++)
-            {
-                wheelsLeft[i].brakeTorque = brakeForce;
-            }
-        }
-        else
-        {
-            for (int i = 0; i < wheelsLeft.Length; i++)
-            {
-                wheelsLeft[i].brakeTorque = 0F;
-            }
         }
     }
 

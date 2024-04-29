@@ -6,10 +6,7 @@ using UnityEngine;
 public class bulletDeSpawn : MonoBehaviour
 {
     public GameObject impactEffect;
-    public bool hitDetection;
-
     public float torqueReductor;
-    public float torqueRecover;
     private float torqueMininum = 0F;
 
     private void OnTriggerEnter(Collider other)
@@ -21,83 +18,100 @@ public class bulletDeSpawn : MonoBehaviour
         Destroy(gameObject, 0F);
 
         TankDriverScript DamageControl = FindAnyObjectByType<TankDriverScript>();
+
         AIController AIDamageControl = FindAnyObjectByType<AIController>();
 
-        //TankDriverScript DamageControl = FindAnyObjectByType<TankDriverScript>();
-        if (other.tag == "Enemy")
+        if (other.tag == "PlayerTBody")
         {
             if (DamageControl.torqueLeft <= torqueMininum)
-        {
+            {
 
-        }
-        else
-        {
+            } 
+            else
+            {
             DamageControl.torqueLeft -= torqueReductor;
+            }
+
+            if (DamageControl.torqueRight <= torqueMininum)
+            {
+
+            }
+            else
+            {
+                DamageControl.torqueRight -= torqueReductor;
+            }
         }
 
-        if (DamageControl.torqueRight <= torqueMininum)
+        if (other.tag == "PlayerOL")
         {
+            if (DamageControl.torqueLeft <= torqueMininum)
+            {
 
+            }
+            else
+            {
+                DamageControl.torqueLeft -= torqueReductor;
+            }
         }
-        else
+
+        if (other.tag == "PlayerOD")
         {
-            DamageControl.torqueRight -= torqueReductor;
+            if (DamageControl.torqueRight <= torqueMininum)
+            {
+
+            }
+            else
+            {
+                DamageControl.torqueRight -= torqueReductor;
+            }
         }
-        }
+
 
 
         //AIController AIDamageControl = FindAnyObjectByType<AIController>();
-        if (other.tag == "AIEnemy")
+        if (other.tag == "AITBody")
         {
-        if (AIDamageControl.torqueLeft <= torqueMininum)
-        {
+            if (AIDamageControl.torqueLeft <= torqueMininum)
+            {
 
-        }
-        else
-        {
-            AIDamageControl.torqueLeft -= torqueReductor;
-        }
+            }
+            else
+            {
+                AIDamageControl.torqueLeft -= torqueReductor;
+            }
 
-        if (AIDamageControl.torqueRight <= torqueMininum)
-        {
+            if (AIDamageControl.torqueRight <= torqueMininum)
+            {
 
-        }
-        else
-        {
-            AIDamageControl.torqueRight -= torqueReductor;
-        }
-        }
-
-    }
-
-    private void Update()
-    {
-
-
-        TankDriverScript DamageControl = FindAnyObjectByType<TankDriverScript>();
-
-        if (DamageControl.torqueLeft < DamageControl.torqueMaxLeft)
-        {
-            DamageControl.torqueLeft += torqueRecover * Time.deltaTime / 4;
+            }
+            else
+            {
+                AIDamageControl.torqueRight -= torqueReductor;
+            }
         }
 
-
-        if (DamageControl.torqueRight < DamageControl.torqueMaxRight)
+        if (other.tag == "AIOL")
         {
-            DamageControl.torqueRight += torqueRecover * Time.deltaTime/4;
+            if (AIDamageControl.torqueLeft <= torqueMininum)
+            {
+
+            }
+            else
+            {
+                AIDamageControl.torqueLeft -= torqueReductor;
+            }
         }
 
-
-        AIController AIDamageControl = FindAnyObjectByType<AIController>();
-
-        if (AIDamageControl.torqueLeft < AIDamageControl.torqueMaxLeft)
+        if (other.tag == "AIOD")
         {
-            AIDamageControl.torqueLeft += torqueRecover * Time.deltaTime / 4;
-        }
+            if (AIDamageControl.torqueRight <= torqueMininum)
+            {
 
-        if (AIDamageControl.torqueRight < AIDamageControl.torqueMaxRight)
-        {
-            AIDamageControl.torqueRight += torqueRecover * Time.deltaTime / 4;
+            }
+            else
+            {
+                AIDamageControl.torqueRight -= torqueReductor;
+            }
         }
     }
 }

@@ -20,7 +20,7 @@ public class TankDriverScript : MonoBehaviour
     public float torqueMaxLeft = 550000F;
     private float brakeForce = 1000000F;
     public float rotationSpeed = 100F;
-    private float downForceValue = 250F;
+    private float downForceValue = 1000F;
     private Rigidbody rb;
     private float rotationInput;
     public GameObject[] leftWheels;

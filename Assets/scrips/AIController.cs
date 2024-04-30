@@ -14,7 +14,7 @@ public class AIController : MonoBehaviour
     public float brakeForce = 0F;
     private float rotationSpeed = 100F;
     private Rigidbody rb;
-    private float downForceValue = 250F;
+    private float downForceValue = 1000F;
     private float rotationInput;
     public GameObject[] leftWheels;
     public GameObject[] rightWheels;

@@ -43,19 +43,26 @@ public class AIInputManager : MonoBehaviour
     }
     private void WayPointDistanceCalculator()
     {
-        Vector3 position = gameObject.transform.position;
-        float distance = Mathf.Infinity;
-
-        for (int i = 0; i < nodes.Count; i++)
+        try
         {
-            Vector3 difference = nodes[i].transform.position - position;
-            float currentDistance = difference.magnitude;
-            if (currentDistance < distance)
+            Vector3 position = gameObject.transform.position;
+            float distance = Mathf.Infinity;
+
+            for (int i = 0; i < nodes.Count; i++)
             {
-                currentWayPoint = nodes[i + distanceOffset];
-                distance = currentDistance;
+                Vector3 difference = nodes[i].transform.position - position;
+                float currentDistance = difference.magnitude;
+                if (currentDistance < distance)
+                {
+                    currentWayPoint = nodes[i + distanceOffset];
+                    distance = currentDistance;
+                }
             }
         }
+        catch
+        {
+        }
+
     }
     private void OnDrawGizmos()
     {

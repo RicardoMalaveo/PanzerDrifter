@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 5624.2944, g: 3449.481, b: 2614.973, a: 1}
+  m_IndirectSpecularColor: {r: 5701.738, g: 3493.0708, b: 2598.6956, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5352,11 +5352,11 @@ Transform:
   m_GameObject: {fileID: 344703818}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.0026358475, z: -0, w: 0.99999654}
-  m_LocalPosition: {x: 376.773, y: -38.572, z: -173.87257}
+  m_LocalPosition: {x: 53.973022, y: -16.671997, z: -192.17258}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 574503081}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &344849439 stripped
 WheelCollider:
@@ -8870,9 +8870,6 @@ Transform:
   - {fileID: 664808625}
   - {fileID: 1221289610}
   - {fileID: 1339922474}
-  - {fileID: 1708397422}
-  - {fileID: 344703820}
-  - {fileID: 1387010630}
   - {fileID: 1658311118}
   - {fileID: 1955923114}
   - {fileID: 970908506}
@@ -20296,6 +20293,7 @@ MonoBehaviour:
   speed: {fileID: 2027626012}
   needle: {fileID: 2052595766}
   currentSpeed: 0
+  currentTanks: []
 --- !u!4 &1387010630
 Transform:
   m_ObjectHideFlags: 0
@@ -20305,11 +20303,11 @@ Transform:
   m_GameObject: {fileID: 1387010628}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.0026358475, z: -0, w: 0.99999654}
-  m_LocalPosition: {x: 1636.9094, y: 104.291695, z: 19.37679}
+  m_LocalPosition: {x: 1314.1094, y: 126.191696, z: 1.0767899}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 574503081}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1393824690 stripped
 Transform:
@@ -25352,11 +25350,11 @@ Transform:
   m_GameObject: {fileID: 1708397420}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.0026358475, z: -0, w: 0.99999654}
-  m_LocalPosition: {x: -168.38336, y: -312.8666, z: -870.246}
+  m_LocalPosition: {x: -491.18335, y: -290.9666, z: -888.54596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 574503081}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1710249671
 PrefabInstance:
@@ -34859,5 +34857,8 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 688565380}
   - {fileID: 1904914080}
+  - {fileID: 1708397422}
+  - {fileID: 344703820}
+  - {fileID: 1387010630}
   - {fileID: 574503081}
   - {fileID: 1940894928}

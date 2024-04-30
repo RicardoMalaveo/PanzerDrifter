@@ -12,25 +12,21 @@ public class TankDriverScript : MonoBehaviour
     public RawImage leftOruga;
     public RawImage rightOruga;
     private inputManager IM;
-    public WheelCollider[] wheelsRight = new WheelCollider[4]; 
+    public WheelCollider[] wheelsRight = new WheelCollider[4];
     public WheelCollider[] wheelsLeft = new WheelCollider[4];
     public float torqueRight = 550000F;
     public float torqueLeft = 550000F;
     public float torqueMaxRight = 550000F;
     public float torqueMaxLeft = 550000F;
     private float brakeForce = 1000000F;
-    public float rotationSpeed = 100.0f;
+    public float rotationSpeed = 100F;
+    private float downForceValue = 250F;
     private Rigidbody rb;
     private float rotationInput;
-    private float tankVXRMax = 60F;
-    private float tankVXRMin = -60F;
-    private float tankVZRMax = 30F;
-    private float tankVZRMin = -30F;
     public GameObject[] leftWheels;
     public GameObject[] rightWheels;
-    public float wheelRotationSpeed = 500.0f;
+    public float wheelRotationSpeed = 500f;
     public float KPH;
-    private Rigidbody rigidbody;
 
     void Start()
     {
@@ -40,11 +36,11 @@ public class TankDriverScript : MonoBehaviour
 
     void Update()
     {
-        if(torqueRight >440000F)
+        if (torqueRight > 440000F)
         {
             rightOruga.color = Color.green;
         }
-        else if(torqueRight>330000)
+        else if (torqueRight > 330000)
         {
             rightOruga.color = Color.yellow;
         }
@@ -95,6 +91,7 @@ public class TankDriverScript : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        downForce();
         RotateWheel();
         Acceleration();
         RotateTank();
@@ -112,7 +109,7 @@ public class TankDriverScript : MonoBehaviour
         {
             wheelsLeft[i].motorTorque = IM.vertical * torqueRight;
         }
-        KPH = rigidbody.velocity.magnitude * 3.6F;
+        KPH = rb.velocity.magnitude * 3.6F;
     }
 
     public void Breaks()
@@ -155,9 +152,9 @@ public class TankDriverScript : MonoBehaviour
 
         float rotation = rotationInput * rotationSpeed * Time.fixedDeltaTime;
 
-         Quaternion turnRotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+        Quaternion turnRotation = Quaternion.Euler(0.0f, rotation, 0.0f);
 
-         rb.MoveRotation(rb.rotation * turnRotation);
+        rb.MoveRotation(rb.rotation * turnRotation);
     }
     void RotateWheel()
     {
@@ -167,7 +164,7 @@ public class TankDriverScript : MonoBehaviour
         {
             if (wheel != null)
             {
-                wheel.transform.Rotate( 0.0f, WheelRotation - IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f);
+                wheel.transform.Rotate(0.0f, WheelRotation - IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f);
             }
         }
         //move the right wheels
@@ -180,9 +177,15 @@ public class TankDriverScript : MonoBehaviour
         }
     }
 
+    private void downForce()
+    {
+        rb.AddForce(-transform.up * downForceValue * rb.velocity.magnitude);
+    }
+
     private void getIM()
     {
         IM = GetComponent<inputManager>();
-        rigidbody = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
+
 }

@@ -14,6 +14,7 @@ public class AIController : MonoBehaviour
     public float brakeForce = 0F;
     private float rotationSpeed = 100F;
     private Rigidbody rb;
+    private float downForceValue = 250F;
     private float rotationInput;
     public GameObject[] leftWheels;
     public GameObject[] rightWheels;
@@ -28,6 +29,7 @@ public class AIController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        downForce();
         RotateWheel();
         Acceleration();
         RotateTank();
@@ -77,11 +79,13 @@ public class AIController : MonoBehaviour
             }
         }
     }
+    private void downForce()
+    {
+        rb.AddForce(-transform.up * downForceValue * rb.velocity.magnitude);
+    }
 
     private void getIM()
     {
         AIM = GetComponent<AIInputManager>();
     }
-
-
 }

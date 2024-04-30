@@ -45,7 +45,7 @@ public class TurretRotation : MonoBehaviour
             _cameraRotation.Yaw += Input.GetAxis("Mouse X") * HSpeed * Time.deltaTime;
             _cameraRotation.Pitch -= Input.GetAxis("Mouse Y") * VSpeed * Time.deltaTime;
             _cameraRotation.Pitch = Mathf.Clamp(_cameraRotation.Pitch, cameraAngle.min, cameraAngle.max);
-            transform.eulerAngles = new Vector3(_cameraRotation.Pitch, _cameraRotation.Yaw, 0.0f);
+            transform.eulerAngles = new Vector3(_cameraRotation.Pitch, _cameraRotation.Yaw, 0F);
         }
         
     }

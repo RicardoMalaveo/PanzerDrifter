@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static TurretRotation;
+using static UnityEngine.GraphicsBuffer;
 
 
 public class TankDriverScript : MonoBehaviour
@@ -20,6 +22,10 @@ public class TankDriverScript : MonoBehaviour
     public float rotationSpeed = 100.0f;
     private Rigidbody rb;
     private float rotationInput;
+    private float tankVXRMax = 60F;
+    private float tankVXRMin = -60F;
+    private float tankVZRMax = 30F;
+    private float tankVZRMin = -30F;
     public GameObject[] leftWheels;
     public GameObject[] rightWheels;
     public float wheelRotationSpeed = 500.0f;
@@ -87,7 +93,6 @@ public class TankDriverScript : MonoBehaviour
         }
 
     }
-
     private void FixedUpdate()
     {
         RotateWheel();

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &81128775479683583
+--- !u!1001 &6725273139823589208
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,31 +10,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.85284674
+      value: 0.44580862
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.85284674
+      value: 0.44580856
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.85284674
+      value: 0.44580862
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -610.76
+      value: -558.12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -595.92
+      value: -575.92
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9804054
+      value: 0.9809212
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -42,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.19699055
+      value: 0.19440566
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2f4bb3a9a47fff94783e28d049d25fbb, type: 2}
     - target: {fileID: 919132149155446097, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       propertyPath: m_Name
-      value: Silo
+      value: Silo (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74,20 +74,20 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1319728462639134945}
+      addedObject: {fileID: 3271548027832056611}
   m_SourcePrefab: {fileID: 100100000, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
---- !u!1 &1000172817675343022 stripped
+--- !u!1 &5878764970633857545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0ad3cee8f38edfd448ecc9058c3410c0, type: 3}
-  m_PrefabInstance: {fileID: 81128775479683583}
+  m_PrefabInstance: {fileID: 6725273139823589208}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1319728462639134945
+--- !u!64 &3271548027832056611
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000172817675343022}
+  m_GameObject: {fileID: 5878764970633857545}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

@@ -11,6 +11,7 @@ public class inputManager : MonoBehaviour
 
     public List<Transform> nodes = new List<Transform>();
     public Transform currentWayPoint;
+    public int currentNode;
     [Range(0, 10)] public int distanceOffset;
 
     private void Awake()
@@ -47,8 +48,17 @@ public class inputManager : MonoBehaviour
                 float currentDistance = difference.magnitude;
                 if (currentDistance < distance)
                 {
-                    currentWayPoint = nodes[i + distanceOffset];
-                    distance = currentDistance;
+                    if ((i + distanceOffset) >= nodes.Count)
+                    {
+                        currentWayPoint = nodes[1];
+                        distance = currentDistance;
+                    }
+                    else
+                    {
+                        currentWayPoint = nodes[i + distanceOffset];
+                        distance = currentDistance;
+                    }
+                    currentNode = i;
                 }
             }
         }

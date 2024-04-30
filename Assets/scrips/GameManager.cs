@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
@@ -5,7 +6,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
     public TankDriverScript speed;
     public GameObject needle;
     private float startPosition = 180F;
@@ -13,17 +13,26 @@ public class GameManager : MonoBehaviour
     private float position;
     public float currentSpeed;
     public GameObject[] currentTanks;
+    public inputManager currentNode;
+    public int playerNode;
+    public AIInputManager AIcurrentNode;
+    public int AINode;
+
 
     private void Awake()
-    {
+    { 
         currentTanks = GameObject.FindGameObjectsWithTag("Player");
-
     }
 
     void Update()
     {
         currentSpeed = speed.KPH;
         updateNeedle();
+        playerNode = currentNode.currentNode;
+        AINode = AIcurrentNode.AIcurrentNode;
+
+        Debug.Log(playerNode);
+        Debug.Log(AINode);
     }
 
 

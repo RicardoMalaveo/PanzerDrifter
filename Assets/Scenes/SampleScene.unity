@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 5870.1694, g: 3553.9067, b: 2509.6487, a: 1}
+  m_IndirectSpecularColor: {r: 5962.522, g: 3563.897, b: 2421.0862, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -882,7 +882,7 @@ Transform:
   m_GameObject: {fileID: 26536800}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 181.6, y: 1, z: -190.4}
+  m_LocalPosition: {x: 202, y: 1, z: -173.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1563,6 +1563,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.96, y: 0.53, z: 1.81}
   m_Center: {x: 0, y: 0.53, z: 0.09}
+--- !u!114 &68429403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6165590907908733349, guid: d01c3ec258ba5124f88d13c22316e967, type: 3}
+  m_PrefabInstance: {fileID: 6024761407891871348}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68429390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f309e512b2b9dcc40b51a34508e28370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &68436963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15527,7 +15538,7 @@ Transform:
   m_GameObject: {fileID: 996969484}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 138.3, y: 1, z: -221}
+  m_LocalPosition: {x: 157.5, y: 1, z: -200.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20895,6 +20906,10 @@ MonoBehaviour:
   needle: {fileID: 2052595766}
   currentSpeed: 0
   currentTanks: []
+  currentNode: {fileID: 2027626016}
+  playerNode: 0
+  AIcurrentNode: {fileID: 68429403}
+  AINode: 0
 --- !u!4 &1387010630
 Transform:
   m_ObjectHideFlags: 0
@@ -31930,6 +31945,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torqueRecover: 50000
+--- !u!114 &2027626016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4567808339559072080, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+  m_PrefabInstance: {fileID: 527120923526259668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027626008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8eb45caa3e8dd34287b68a1c4e979a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2033928265
 GameObject:
   m_ObjectHideFlags: 0
@@ -34121,6 +34147,10 @@ PrefabInstance:
     - target: {fileID: 614957416864134267, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567808339559072080, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+      propertyPath: distanceOffset
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4777302386781864422, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
       propertyPath: m_Mass

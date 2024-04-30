@@ -19,7 +19,7 @@ public class AIController : MonoBehaviour
     public GameObject[] leftWheels;
     public GameObject[] rightWheels;
     public float wheelRotationSpeed = 500F;
-
+    public string playerName = "Player Two";
 
     void Start()
     {

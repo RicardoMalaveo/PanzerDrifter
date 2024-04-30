@@ -13,6 +13,7 @@ public class AIInputManager : MonoBehaviour
     public Transform currentWayPoint;
     [Range(0, 10)] public int distanceOffset;
     [Range(0, 10)] public float rotationSpeed;
+    public int AIcurrentNode;
 
 
     private void Awake()
@@ -54,8 +55,17 @@ public class AIInputManager : MonoBehaviour
                 float currentDistance = difference.magnitude;
                 if (currentDistance < distance)
                 {
-                    currentWayPoint = nodes[i + distanceOffset];
-                    distance = currentDistance;
+                    if ((i + distanceOffset) >= nodes.Count)
+                    {
+                        currentWayPoint = nodes[1];
+                        distance = currentDistance;
+                    }
+                    else
+                    {
+                        currentWayPoint = nodes[i + distanceOffset];
+                        distance = currentDistance;
+                    }
+                    AIcurrentNode = i;
                 }
             }
         }

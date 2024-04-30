@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static TurretRotation;
-using static UnityEngine.GraphicsBuffer;
 
 
 public class TankDriverScript : MonoBehaviour
@@ -27,6 +25,7 @@ public class TankDriverScript : MonoBehaviour
     public GameObject[] rightWheels;
     public float wheelRotationSpeed = 500f;
     public float KPH;
+    public string playerName = "Player One";
 
     void Start()
     {

@@ -9,6 +9,9 @@ public class TankDriverScript : MonoBehaviour
     public RawImage engine;
     public RawImage leftOruga;
     public RawImage rightOruga;
+    public float xmas;
+    public float ymas;
+    public float zmas;
     private inputManager IM;
     public WheelCollider[] wheelsRight = new WheelCollider[4];
     public WheelCollider[] wheelsLeft = new WheelCollider[4];
@@ -18,7 +21,7 @@ public class TankDriverScript : MonoBehaviour
     public float torqueMaxLeft = 550000F;
     private float brakeForce = 1000000F;
     public float rotationSpeed = 100F;
-    private float downForceValue = 1000F;
+    public float downForceValue = 1000F;
     private Rigidbody rb;
     private float rotationInput;
     public GameObject[] leftWheels;
@@ -31,6 +34,7 @@ public class TankDriverScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         getIM();
+        rb.centerOfMass += new Vector3(xmas, ymas, zmas);
     }
 
     void Update()

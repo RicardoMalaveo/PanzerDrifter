@@ -15,6 +15,7 @@ public class RotationControlledMouse : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
+
     }
 
     void Update()

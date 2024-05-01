@@ -289,8 +289,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4886975687728263144}
-  - component: {fileID: 1398365534766803116}
-  - component: {fileID: 6901222106270960139}
   m_Layer: 0
   m_Name: BulletSpawn
   m_TagString: Untagged
@@ -313,117 +311,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 110426370534865537}
   m_LocalEulerAnglesHint: {x: -1.117, y: 0, z: 0}
---- !u!114 &1398365534766803116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3560376276521933186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75c47669e1d10f34a9ce3a592db37461, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireRate: 1
-  launchSpeed: 100
-  objectPrefab: {fileID: 9102221054657833148, guid: b45e1c4ea5f51d74ca6696f0f4028e9e, type: 3}
---- !u!82 &6901222106270960139
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3560376276521933186}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2619aac68f989684b9ff444c3abc4204, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.369
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &4135251203311221986
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +385,7 @@ MonoBehaviour:
   - {fileID: 8393127077931504476}
   - {fileID: 1579726337809270378}
   wheelRotationSpeed: 500
+  playerName: Player Two
 --- !u!54 &7370228228792120809
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -545,6 +433,7 @@ MonoBehaviour:
   currentWayPoint: {fileID: 0}
   distanceOffset: 1
   rotationSpeed: 2.52
+  AIcurrentNode: 0
 --- !u!1 &4957569488571398316
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,9 +707,10 @@ MonoBehaviour:
   enemyTag: Enemy
   Turret: {fileID: 110426370534865537}
   turretRotationSpeed: 10
-  tankBody: {fileID: 4421539222889301993}
-  launchSpeed: 100
   objectPrefab: {fileID: 9102221054657833148, guid: b45e1c4ea5f51d74ca6696f0f4028e9e, type: 3}
+  fireRate: 1
+  launchSpeed: 100
+  bulletspawn: {fileID: 0}
 --- !u!1 &6720924213431888331
 GameObject:
   m_ObjectHideFlags: 0

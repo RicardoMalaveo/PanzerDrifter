@@ -5,10 +5,8 @@ using UnityEngine;
 public class Destroy : MonoBehaviour
 {
     public GameObject Wall;
-    void Update()
+    void Start()
     {
-
-        GameObject murito = Instantiate(Wall, transform.position, transform.rotation);
-        Destroy(Wall, 3F);
+        Destroy(Wall, 5F);
     }
 }

@@ -6,7 +6,6 @@ public class checkPointAndPointSystem : MonoBehaviour
 {
     public int playerLapNumber;
     public int AILapNumber;
-
     public int playerCheckPointIndex;
     public int AICheckPointIndex;
     public float AIPoints;

@@ -10,17 +10,25 @@ public class lapManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         checkPointAndPointSystem CheckPointManager = FindAnyObjectByType<checkPointAndPointSystem>();
-        if (other.tag == "Player")
+        if (other.tag == "Enemy")
         {
-            if (CheckPointManager.playerLapNumber >= totalLaps)
+            if (CheckPointManager.playerCheckPointIndex < 3)
             {
+                Debug.Log("going the wrong way");
+            }
+            else if (CheckPointManager.playerLapNumber >= totalLaps)
+            {
+
                 if(CheckPointManager.playerCheckPointIndex < checkpoints.Count)
                 {
-                    Debug.Log("AI won");
-                }
-                else
-                {
-                    Debug.Log("victory");
+                    if(CheckPointManager.AIPoints >= CheckPointManager.playerPoints)
+                    {
+                        Debug.Log("AI WON");
+                    }
+                    else
+                    {
+                        Debug.Log("Victory");
+                    }
                 }
 
             }

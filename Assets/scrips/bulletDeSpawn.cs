@@ -14,7 +14,7 @@ public class bulletDeSpawn : MonoBehaviour
 
         GameObject EffectIns = Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(EffectIns, 1F);
-        Destroy(gameObject, 0F);
+        Destroy(gameObject, 1F);
 
         checkPointAndPointSystem points = FindAnyObjectByType<checkPointAndPointSystem>();
 

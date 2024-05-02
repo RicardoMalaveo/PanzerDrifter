@@ -11,7 +11,7 @@ public class checkPointManager : MonoBehaviour
 
             checkPointAndPointSystem CheckPointManager = FindAnyObjectByType<checkPointAndPointSystem>();
 
-            if (other.tag == "Player")
+            if (other.tag == "Enemy")
             {
               if (CheckPointManager.playerCheckPointIndex == index - 1)
                {

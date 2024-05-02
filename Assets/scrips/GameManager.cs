@@ -18,6 +18,12 @@ public class GameManager : MonoBehaviour
     public AIInputManager AIcurrentNode;
     public int AINode;
 
+    public bulletDeSpawn playerPoints;
+
+    public float PlayerOnePoints = 0;
+    public float playerTwoPoints =0;
+
+
 
     private void Awake()
     { 
@@ -28,11 +34,16 @@ public class GameManager : MonoBehaviour
     {
         currentSpeed = speed.KPH;
         updateNeedle();
+
+
+        //Debug.Log(PlayerOnePoints);
+        //Debug.Log(AIPoints);
+
         playerNode = currentNode.currentNode;
         AINode = AIcurrentNode.AIcurrentNode;
 
-        Debug.Log(playerNode);
-        Debug.Log(AINode);
+       //Debug.Log(playerNode);
+       //Debug.Log(AINode);
     }
 
 

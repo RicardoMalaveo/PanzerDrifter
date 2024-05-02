@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.TerrainTools;
 using UnityEngine;
 
 public class bulletDeSpawn : MonoBehaviour
@@ -9,9 +8,8 @@ public class bulletDeSpawn : MonoBehaviour
     public float torqueReductor;
     private float torqueMininum = 0F;
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-
 
         GameObject EffectIns = Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(EffectIns, 1F);
@@ -29,12 +27,11 @@ public class bulletDeSpawn : MonoBehaviour
             } 
             else
             {
-            DamageControl.torqueLeft -= torqueReductor;
+                DamageControl.torqueLeft -= torqueReductor;
             }
 
             if (DamageControl.torqueRight <= torqueMininum)
             {
-
             }
             else
             {
@@ -51,6 +48,7 @@ public class bulletDeSpawn : MonoBehaviour
             else
             {
                 DamageControl.torqueLeft -= torqueReductor;
+
             }
         }
 
@@ -63,6 +61,7 @@ public class bulletDeSpawn : MonoBehaviour
             else
             {
                 DamageControl.torqueRight -= torqueReductor;
+
             }
         }
 
@@ -77,7 +76,9 @@ public class bulletDeSpawn : MonoBehaviour
             }
             else
             {
+
                 AIDamageControl.torqueLeft -= torqueReductor;
+
             }
 
             if (AIDamageControl.torqueRight <= torqueMininum)
@@ -86,7 +87,9 @@ public class bulletDeSpawn : MonoBehaviour
             }
             else
             {
+
                 AIDamageControl.torqueRight -= torqueReductor;
+
             }
         }
 
@@ -98,6 +101,7 @@ public class bulletDeSpawn : MonoBehaviour
             }
             else
             {
+
                 AIDamageControl.torqueLeft -= torqueReductor;
             }
         }

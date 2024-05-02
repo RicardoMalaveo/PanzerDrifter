@@ -8,12 +8,46 @@ public class bulletDeSpawn : MonoBehaviour
     public float torqueReductor;
     private float torqueMininum = 0F;
 
+
     public void OnTriggerEnter(Collider other)
     {
 
         GameObject EffectIns = Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(EffectIns, 1F);
         Destroy(gameObject, 0F);
+
+        checkPointAndPointSystem points = FindAnyObjectByType<checkPointAndPointSystem>();
+
+        if (other.tag == "PlayerTBody")
+            {
+            points.AIPoints += 50F;
+        }
+
+        if (other.tag == "PlayerOL")
+            {
+            points.AIPoints += 100F;
+        }
+
+        if (other.tag == "PlayerOD")
+        {
+            points.AIPoints += 100F;
+
+        }
+
+        if (other.tag == "AITBody")
+        {
+            points.playerPoints += 50F;
+        }
+
+        if (other.tag == "AIOL")
+        {
+            points.playerPoints += 100F;
+        }
+
+        if (other.tag == "AIOD")
+        {
+            points.playerPoints += 100F;
+        }
 
         TankDriverScript DamageControl = FindAnyObjectByType<TankDriverScript>();
 
@@ -43,7 +77,6 @@ public class bulletDeSpawn : MonoBehaviour
         {
             if (DamageControl.torqueLeft <= torqueMininum)
             {
-
             }
             else
             {
@@ -56,7 +89,6 @@ public class bulletDeSpawn : MonoBehaviour
         {
             if (DamageControl.torqueRight <= torqueMininum)
             {
-
             }
             else
             {
@@ -72,22 +104,18 @@ public class bulletDeSpawn : MonoBehaviour
         {
             if (AIDamageControl.torqueLeft <= torqueMininum)
             {
-
             }
             else
             {
-
                 AIDamageControl.torqueLeft -= torqueReductor;
 
             }
 
             if (AIDamageControl.torqueRight <= torqueMininum)
             {
-
             }
             else
             {
-
                 AIDamageControl.torqueRight -= torqueReductor;
 
             }
@@ -97,11 +125,9 @@ public class bulletDeSpawn : MonoBehaviour
         {
             if (AIDamageControl.torqueLeft <= torqueMininum)
             {
-
             }
             else
             {
-
                 AIDamageControl.torqueLeft -= torqueReductor;
             }
         }
@@ -110,12 +136,13 @@ public class bulletDeSpawn : MonoBehaviour
         {
             if (AIDamageControl.torqueRight <= torqueMininum)
             {
-
             }
             else
             {
+
                 AIDamageControl.torqueRight -= torqueReductor;
             }
         }
     }
+
 }

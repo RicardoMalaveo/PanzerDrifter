@@ -4,11 +4,26 @@ using UnityEngine;
 
 public class checkPointAndPointSystem : MonoBehaviour
 {
-    public int lapNumber;
-    public int checkPointIndex;
+    public int playerLapNumber;
+    public int AILapNumber;
+
+    public int playerCheckPointIndex;
+    public int AICheckPointIndex;
+    public float AIPoints;
+    public float playerPoints;
+
     public void Start()
     {
-        lapNumber = 1;
-        checkPointIndex = 0;
+        playerLapNumber = 1;
+        AILapNumber = 1;
+        playerCheckPointIndex = 0;
+        AICheckPointIndex = 0;
+        playerPoints = 0;
+        AIPoints = 0;
+    }
+    public void Update()
+    {
+        Debug.Log(playerPoints);
+        Debug.Log(AIPoints);
     }
 }

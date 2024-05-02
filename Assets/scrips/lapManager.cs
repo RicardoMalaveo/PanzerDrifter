@@ -7,19 +7,43 @@ public class lapManager : MonoBehaviour
     public List<checkPointManager> checkpoints;
     public int totalLaps;
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter(Collider other)
     {
-
-            checkPointAndPointSystem CheckPointManager = FindAnyObjectByType<checkPointAndPointSystem>();
-            if (CheckPointManager.checkPointIndex == checkpoints.Count)
+        checkPointAndPointSystem CheckPointManager = FindAnyObjectByType<checkPointAndPointSystem>();
+        if (other.tag == "Player")
+        {
+            if (CheckPointManager.playerLapNumber >= totalLaps)
             {
-            CheckPointManager.checkPointIndex = 0;
-            CheckPointManager.lapNumber++;
+                if(CheckPointManager.playerCheckPointIndex < checkpoints.Count)
+                {
+                    Debug.Log("AI won");
+                }
+                else
+                {
+                    Debug.Log("victory");
+                }
+
+            }
+            else if (CheckPointManager.playerCheckPointIndex == checkpoints.Count)
+            {
+                CheckPointManager.playerCheckPointIndex = 0;
+                CheckPointManager.playerLapNumber++;
             }
 
-            if (CheckPointManager.lapNumber >= totalLaps)
+        }
+
+
+        if (other.tag == "AITBody")
+        {
+            if (CheckPointManager.AILapNumber >= totalLaps)
             {
-                Debug.Log("victory!");
+                Debug.Log("AI won");
             }
+            else if (CheckPointManager.AICheckPointIndex == checkpoints.Count)
+            {
+                CheckPointManager.AICheckPointIndex = 0;
+                CheckPointManager.AILapNumber++;
+            }
+        }
     }
 }

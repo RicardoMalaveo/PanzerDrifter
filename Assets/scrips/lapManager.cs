@@ -7,9 +7,12 @@ public class lapManager : MonoBehaviour
     public List<checkPointManager> checkpoints;
     public int totalLaps;
 
+
     private void OnTriggerEnter(Collider other)
     {
         checkPointAndPointSystem CheckPointManager = FindAnyObjectByType<checkPointAndPointSystem>();
+        GameManager timers = FindAnyObjectByType<GameManager>();
+
         if (other.tag == "Enemy")
         {
             if (CheckPointManager.playerCheckPointIndex < 3)
@@ -18,26 +21,76 @@ public class lapManager : MonoBehaviour
             }
             else if (CheckPointManager.playerLapNumber >= totalLaps)
             {
-
-                if(CheckPointManager.playerCheckPointIndex < checkpoints.Count)
+                CheckPointManager.playerFinishTime = timers.lapTimer;
+                if (CheckPointManager.AIFinishTime > 0)
                 {
-                    if(CheckPointManager.AIPoints >= CheckPointManager.playerPoints)
+                    if (CheckPointManager.playerFinishTime < CheckPointManager.AIFinishTime)
                     {
-                        Debug.Log("AI WON");
+                        CheckPointManager.playerPoints += 2000F;
                     }
                     else
                     {
-                        Debug.Log("Victory");
+                        CheckPointManager.AIPoints += 2000F;
                     }
-                }
 
+                }
+                else
+                {
+                    CheckPointManager.playerPoints += 2000F;
+
+                }
             }
             else if (CheckPointManager.playerCheckPointIndex == checkpoints.Count)
             {
+                
                 CheckPointManager.playerCheckPointIndex = 0;
                 CheckPointManager.playerLapNumber++;
-            }
 
+                if (CheckPointManager.playerLapNumber == 1F)
+                {
+                    CheckPointManager.playerFirstLapTime = timers.lapTimer;
+
+                    if(CheckPointManager.AIFirstLapTime > 0) 
+                    {
+                        if(CheckPointManager.playerFirstLapTime < CheckPointManager.AIFirstLapTime)
+                        {
+                            CheckPointManager.playerPoints += 1000F;
+                        }
+                        else
+                        {
+                            CheckPointManager.AIPoints += 1000F;
+                        }
+                    }
+                    else
+                    {
+                        CheckPointManager.playerPoints += 1000F;
+                    }
+                }
+
+                if (CheckPointManager.playerLapNumber == 2F)
+                {
+                    CheckPointManager.playerSecondLapTime = timers.lapTimer;
+
+
+                    if (CheckPointManager.AISecondLapTime > 0)
+                    {
+                        if (CheckPointManager.playerSecondLapTime < CheckPointManager.AISecondLapTime)
+                        {
+                            CheckPointManager.playerPoints += 1000F;
+                        }
+                        else
+                        {
+                            CheckPointManager.AIPoints += 1000F;
+                        }
+                    }
+                    else
+                    {
+                        CheckPointManager.playerPoints += 1000F;
+                    }
+
+                }
+
+            }
         }
 
 
@@ -45,13 +98,32 @@ public class lapManager : MonoBehaviour
         {
             if (CheckPointManager.AILapNumber >= totalLaps)
             {
-                Debug.Log("AI won");
+                CheckPointManager.AIFinishTime = timers.lapTimer;
+
             }
             else if (CheckPointManager.AICheckPointIndex == checkpoints.Count)
             {
                 CheckPointManager.AICheckPointIndex = 0;
                 CheckPointManager.AILapNumber++;
+
+                if (CheckPointManager.AILapNumber == 1F)
+                {
+                    CheckPointManager.AIFirstLapTime = timers.lapTimer;
+                }
+
+                if (CheckPointManager.AILapNumber == 2F)
+                {
+                    CheckPointManager.AIFirstLapTime = timers.lapTimer;
+                }
+
+                if (CheckPointManager.AILapNumber == 2F)
+                {
+                    CheckPointManager.AIFirstLapTime = timers.lapTimer;
+                }
+
             }
         }
+
+
     }
 }

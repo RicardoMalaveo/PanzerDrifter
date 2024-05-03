@@ -13,13 +13,13 @@ public class damageControl : MonoBehaviour
 
         if (DamageControl.torqueLeft < DamageControl.torqueMaxLeft)
         {
-            DamageControl.torqueLeft += torqueRecover * Time.deltaTime / 4F;
+            DamageControl.torqueLeft += torqueRecover * Time.deltaTime / 2F;
         }
 
 
         if (DamageControl.torqueRight < DamageControl.torqueMaxRight)
         {
-            DamageControl.torqueRight += torqueRecover * Time.deltaTime / 4F;
+            DamageControl.torqueRight += torqueRecover * Time.deltaTime / 2F;
         }
 
 
@@ -27,12 +27,12 @@ public class damageControl : MonoBehaviour
 
         if (AIDamageControl.torqueLeft < AIDamageControl.torqueMaxLeft)
         {
-            AIDamageControl.torqueLeft += torqueRecover * Time.deltaTime / 4F;
+            AIDamageControl.torqueLeft += torqueRecover * Time.deltaTime / 2F;
         }
 
         if (AIDamageControl.torqueRight < AIDamageControl.torqueMaxRight)
         {
-            AIDamageControl.torqueRight += torqueRecover * Time.deltaTime / 4F;
+            AIDamageControl.torqueRight += torqueRecover * Time.deltaTime / 2F;
         }
     }
 }

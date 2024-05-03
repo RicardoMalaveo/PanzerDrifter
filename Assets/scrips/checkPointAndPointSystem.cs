@@ -4,25 +4,34 @@ using UnityEngine;
 
 public class checkPointAndPointSystem : MonoBehaviour
 {
-    public int playerLapNumber;
-    public int AILapNumber;
     public int playerCheckPointIndex;
     public int AICheckPointIndex;
+
+    public int playerLapNumber;
+    public int AILapNumber;
+
     public float AIPoints;
     public float playerPoints;
 
+    public float playerFirstLapTime;
+    public float AIFirstLapTime;
+
+    public float playerSecondLapTime;
+    public float AISecondLapTime;
+
+    public float playerFinishTime;
+    public float AIFinishTime;
+
     public void Start()
     {
-        playerLapNumber = 1;
-        AILapNumber = 1;
         playerCheckPointIndex = 0;
         AICheckPointIndex = 0;
+
+        playerLapNumber = 0;
+        AILapNumber = 0;
+
         playerPoints = 0;
         AIPoints = 0;
     }
-    public void Update()
-    {
-        Debug.Log(playerPoints);
-        Debug.Log(AIPoints);
-    }
+
 }

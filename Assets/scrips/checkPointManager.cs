@@ -14,10 +14,14 @@ public class checkPointManager : MonoBehaviour
             if (other.tag == "Enemy")
             {
               if (CheckPointManager.playerCheckPointIndex == index - 1)
-               {
+              {
                     CheckPointManager.playerCheckPointIndex = index;
                     Debug.Log("first check point");
-               }
+              }
+              else if (CheckPointManager.playerCheckPointIndex < index -1 && CheckPointManager.playerCheckPointIndex >=2)
+              {
+                CheckPointManager.playerCheckPointIndex += 1;
+              }
             }
 
 

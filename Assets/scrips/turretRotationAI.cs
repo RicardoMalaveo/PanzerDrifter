@@ -12,7 +12,7 @@ public class turretRotationAI : MonoBehaviour
     public float turretRotationSpeed = 15F;
     public GameObject objectPrefab;
     public float fireRate = 1F;
-    private float fireCountDown = 0F;
+    private float fireCountDown = 5F;
     public float launchSpeed = 450F;
     private AudioSource sonidoDisparo;
     public Transform bulletspawn;

@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -71,8 +70,8 @@ public class GameManager : MonoBehaviour
 
        if (victory== true)
         {
-            defeatPanel.SetActive(true);
-            Time.timeScale = 0F;
+            victoryPanel.SetActive(true);
+
         }
 
     }

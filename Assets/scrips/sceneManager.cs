@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class sceneManager : MonoBehaviour
 {
-    private string raceTrack = "Egypt";
+   [SerializeField] private string raceTrack = "Egypt";
     public void RestarGame()
     {
         SceneManager.LoadScene(raceTrack);

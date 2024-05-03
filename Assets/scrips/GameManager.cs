@@ -1,33 +1,26 @@
 using NUnit.Framework;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public TankDriverScript speed;
     public GameObject needle;
+    public TMP_Text timer;
     private float startPosition = 180F;
     private float endPosition = -130F;
     private float position;
     public float currentSpeed;
-    public GameObject[] currentTanks;
-    public inputManager currentNode;
-    public int playerNode;
-    public AIInputManager AIcurrentNode;
-    public int AINode;
+    public float lapTimer;
 
-    public bulletDeSpawn playerPoints;
-
-    public float PlayerOnePoints = 0;
-    public float playerTwoPoints =0;
-
-
-
-    private void Awake()
-    { 
-        currentTanks = GameObject.FindGameObjectsWithTag("Player");
+    private void Start()
+    {
+        timer.text = "0:00:00";
     }
 
     void Update()
@@ -35,15 +28,13 @@ public class GameManager : MonoBehaviour
         currentSpeed = speed.KPH;
         updateNeedle();
 
-
-        //Debug.Log(PlayerOnePoints);
-        //Debug.Log(AIPoints);
-
-        playerNode = currentNode.currentNode;
-        AINode = AIcurrentNode.AIcurrentNode;
-
-       //Debug.Log(playerNode);
-       //Debug.Log(AINode);
+        lapTimer = Mathf.Max(0, lapTimer + Time.deltaTime);
+        var timeSpan = TimeSpan.FromSeconds(lapTimer);
+        timer.text = timeSpan.Hours.ToString("0") + ":" +
+                        timeSpan.Minutes.ToString("00") + ":" +
+                        timeSpan.Seconds.ToString("00") + "." +
+                        timeSpan.Milliseconds / 100;        
+        Debug.Log(lapTimer);
     }
 
 

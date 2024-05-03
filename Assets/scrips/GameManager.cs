@@ -32,6 +32,14 @@ public class GameManager : MonoBehaviour
         currentSpeed = speed.KPH;
         updateNeedle();
 
+
+        lapTimer = Mathf.Max(0, lapTimer + Time.deltaTime);
+        var timeSpan = TimeSpan.FromSeconds(lapTimer);
+        timer.text = timeSpan.Hours.ToString("0") + ":" +
+                        timeSpan.Minutes.ToString("00") + ":" +
+                        timeSpan.Seconds.ToString("00") + "." +
+                        timeSpan.Milliseconds / 100;
+
         if (currentlap.playerLapNumber == 0)
         {
             lapCount.text = "1st Lap";
@@ -46,13 +54,6 @@ public class GameManager : MonoBehaviour
         }
 
 
-
-        lapTimer = Mathf.Max(0, lapTimer + Time.deltaTime);
-        var timeSpan = TimeSpan.FromSeconds(lapTimer);
-        timer.text = timeSpan.Hours.ToString("0") + ":" +
-                        timeSpan.Minutes.ToString("00") + ":" +
-                        timeSpan.Seconds.ToString("00") + "." +
-                        timeSpan.Milliseconds / 100;
 
        if( currentlap.playerLapNumber ==3)
         {

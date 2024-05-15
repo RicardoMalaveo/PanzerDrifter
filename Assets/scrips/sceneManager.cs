@@ -5,12 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class sceneManager : MonoBehaviour
 {
-   [SerializeField] private string sceneLoad = "Menu";
     public void RestarGame()
     {
-        Debug.Log(sceneLoad);
-        SceneManager.LoadScene(sceneLoad);
+        Debug.Log("Menu");
+        SceneManager.LoadScene("Menu");
         
+    }
+    public void PlayButton()
+    {
+        Debug.Log("Egypt");
+        SceneManager.LoadScene("Egypt");
+
+    }
+    public void ExitButton()
+    {
+        Debug.Log("Exit");
+        Application.Quit();
     }
 
 }

@@ -30,7 +30,7 @@ public class RotationControlledMouse : MonoBehaviour
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.lockState = CursorLockMode.Locked;
             Vector3 PointToScreen = Camera.main.WorldToScreenPoint(turretPoint.position);
             float screenDiference = (PointToScreen.x - Input.mousePosition.x)/ Screen.width;
 

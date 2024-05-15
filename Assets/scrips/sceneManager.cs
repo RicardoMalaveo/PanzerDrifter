@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class sceneManager : MonoBehaviour
 {
-   [SerializeField] private string raceTrack = "Egypt";
+   [SerializeField] private string sceneLoad = "Menu";
     public void RestarGame()
     {
-        SceneManager.LoadScene(raceTrack);
+        Debug.Log(sceneLoad);
+        SceneManager.LoadScene(sceneLoad);
+        
     }
 
 }

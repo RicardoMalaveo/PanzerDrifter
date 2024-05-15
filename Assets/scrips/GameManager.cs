@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public sceneManager loadmenu;
     public TankDriverScript speed;
     public GameObject needle;
     public checkPointAndPointSystem currentlap;
@@ -72,6 +73,7 @@ public class GameManager : MonoBehaviour
        if (victory== true)
         {
             victoryPanel.SetActive(true);
+            loadmenu.RestarGame();
 
         }
 

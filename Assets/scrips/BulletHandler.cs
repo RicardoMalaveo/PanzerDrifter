@@ -10,8 +10,6 @@ public class BulletHandler : MonoBehaviour
     public GameObject BulletSpawn;
     public RectTransform crosshair;
     public Camera cam;
-
-
     void Start()
     {
         
@@ -20,7 +18,7 @@ public class BulletHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-                RaycastHit hit;
+        RaycastHit hit;
         if (Physics.Raycast(BulletSpawn.transform.position, BulletSpawn.transform.forward, out hit))
         {
             if (hit.collider)
@@ -28,8 +26,7 @@ public class BulletHandler : MonoBehaviour
                 crosshair.position = cam.WorldToScreenPoint(hit.point);
             }
         }
-
-        if(Input.GetKeyDown(KeyCode.Mouse0)) 
+        if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             sonidoDisparo = GetComponent<AudioSource>();
             sonidoDisparo.PlayOneShot(sonidoDisparo.clip);

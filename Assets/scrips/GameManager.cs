@@ -5,6 +5,7 @@ using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -60,23 +61,15 @@ public class GameManager : MonoBehaviour
         {
             if (currentlap.playerPoints > currentlap.AIPoints)
             {
-                victoryPanel.SetActive(true);
-                Time.timeScale = 0F;
+                Debug.Log("Victory");
+                SceneManager.LoadScene("Victory");
             }
             else
             {
-                defeatPanel.SetActive(true);
-                Time.timeScale = 0F;
+                Debug.Log("Defeat");
+                SceneManager.LoadScene("Defeat");
             }
         }
-
-       if (victory== true)
-        {
-            victoryPanel.SetActive(true);
-            loadmenu.RestarGame();
-
-        }
-
     }
 
 

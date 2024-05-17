@@ -8,5 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Egypt.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: e2449bde9df52044798ae26976b67741
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 770375ed5e949f24b82fb2893350edaa
+  - enabled: 1
+    path: Assets/Scenes/Defeat.unity
+    guid: 51b0a3211a8d9fb41b12061a72e535dd
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -20,33 +20,40 @@ public class bulletDeSpawn : MonoBehaviour
 
         if (other.tag == "PlayerTBody")
             {
-            points.AIPoints += 50F;
+            points.AIPoints += 100F;
+            points.AIDirectHits += 1;
+
         }
 
         if (other.tag == "PlayerOL")
             {
-            points.AIPoints += 100F;
+            points.AIPoints += 50F;
+            points.AIHits += 1;
         }
 
         if (other.tag == "PlayerOD")
         {
-            points.AIPoints += 100F;
+            points.AIPoints += 50F;
+            points.AIHits += 1;
 
         }
 
         if (other.tag == "AITBody")
         {
-            points.playerPoints += 50F;
+            points.playerPoints += 100F;
+            points.playerDirectHits += 1;
         }
 
         if (other.tag == "AIOL")
         {
-            points.playerPoints += 100F;
+            points.playerPoints += 50F;
+            points.playerHits +=1;
         }
 
         if (other.tag == "AIOD")
         {
-            points.playerPoints += 100F;
+            points.playerPoints += 50F;
+            points.playerHits += 1;
         }
 
         TankDriverScript DamageControl = FindAnyObjectByType<TankDriverScript>();
@@ -99,7 +106,6 @@ public class bulletDeSpawn : MonoBehaviour
 
 
 
-        //AIController AIDamageControl = FindAnyObjectByType<AIController>();
         if (other.tag == "AITBody")
         {
             if (AIDamageControl.torqueLeft <= torqueMininum)
@@ -139,7 +145,6 @@ public class bulletDeSpawn : MonoBehaviour
             }
             else
             {
-
                 AIDamageControl.torqueRight -= torqueReductor;
             }
         }

@@ -35,7 +35,6 @@ public class AIInputManager : MonoBehaviour
     private void AIRotation()
     {
         //horizontal tank rotation
-
         Vector3 relative = transform.InverseTransformPoint(currentWayPoint.transform.position);
         relative /= relative.magnitude;
 
@@ -72,7 +71,6 @@ public class AIInputManager : MonoBehaviour
         catch
         {
         }
-
     }
     private void OnDrawGizmos()
     {

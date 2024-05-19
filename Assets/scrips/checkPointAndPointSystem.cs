@@ -22,6 +22,12 @@ public class checkPointAndPointSystem : MonoBehaviour
     public float playerFinishTime;
     public float AIFinishTime;
 
+    public float playerDirectHits;
+    public float AIDirectHits;
+
+    public float playerHits;
+    public float AIHits;
+
     public void Start()
     {
         playerCheckPointIndex = 0;

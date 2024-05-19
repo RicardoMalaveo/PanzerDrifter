@@ -8,7 +8,6 @@ public class inputManager : MonoBehaviour
     public float horizontal;
     public bool handbreak;
     public AITankWayPoints TankWayPoints;
-
     public List<Transform> nodes = new List<Transform>();
     public Transform currentWayPoint;
     public int currentNode;
@@ -24,10 +23,6 @@ public class inputManager : MonoBehaviour
     {
         Keyboard();
         WayPointDistanceCalculator();
-    }
-    void Start()
-    {
-        Cursor.visible = false;
     }
     private void Keyboard()
     {

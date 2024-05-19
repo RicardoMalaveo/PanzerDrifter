@@ -14,15 +14,25 @@ public class GameManager : MonoBehaviour
     public GameObject needle;
     public checkPointAndPointSystem currentlap;
     public TMP_Text timer;
+    public TMP_Text AIFirstLap;
+    public TMP_Text AISecondLap;
+    public TMP_Text AIThirdLap;
+    public TMP_Text PlayerFirstLap;
+    public TMP_Text PlayerSecondLap;
+    public TMP_Text PlayerThirdLap;
+    public TMP_Text AIDirectHitsTotal;
+    public TMP_Text AIHitsTotal;
+    public TMP_Text PlayerDirectHitsTotal;
+    public TMP_Text PlayerHitsTotal;
     public TMP_Text lapCount;
-    public GameObject victoryPanel;
-    public GameObject defeatPanel;
+    public GameObject EndGamePanel;
+    public GameObject defeat;
+    public GameObject Victory;
     private float startPosition = 180F;
     private float endPosition = -130F;
     private float position;
     public float currentSpeed;
     public float lapTimer;
-    public bool victory;
 
     private void Start()
     {
@@ -58,18 +68,67 @@ public class GameManager : MonoBehaviour
 
 
        if( currentlap.playerLapNumber ==3)
-        {
+       {
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             if (currentlap.playerPoints > currentlap.AIPoints)
             {
-                Debug.Log("Victory");
-                SceneManager.LoadScene("Victory");
+                EndGamePanel.SetActive(true);
+                Victory.SetActive(true);
             }
             else
             {
-                Debug.Log("Defeat");
-                SceneManager.LoadScene("Defeat");
+                EndGamePanel.SetActive(true);
+                defeat.SetActive(true);
             }
-        }
+       }
+
+
+        var playerFirstLap = TimeSpan.FromSeconds(currentlap.playerFirstLapTime);
+        PlayerFirstLap.text = playerFirstLap.Hours.ToString("0") + ":" +
+                        playerFirstLap.Minutes.ToString("00") + ":" +
+                        playerFirstLap.Seconds.ToString("00") + "." +
+                        playerFirstLap.Milliseconds / 100;
+
+        var playerSecondLap = TimeSpan.FromSeconds(currentlap.playerSecondLapTime);
+        PlayerSecondLap.text = playerSecondLap.Hours.ToString("0") + ":" +
+                        playerSecondLap.Minutes.ToString("00") + ":" +
+                        playerSecondLap.Seconds.ToString("00") + "." +
+                        playerSecondLap.Milliseconds / 100;
+
+        var playerThirdLap = TimeSpan.FromSeconds(currentlap.playerFinishTime);
+        PlayerThirdLap.text = playerThirdLap.Hours.ToString("0") + ":" +
+                        playerThirdLap.Minutes.ToString("00") + ":" +
+                        playerThirdLap.Seconds.ToString("00") + "." +
+                        playerThirdLap.Milliseconds / 100;
+
+        var aIFirstLap = TimeSpan.FromSeconds(currentlap.AIFirstLapTime);
+        AIFirstLap.text = aIFirstLap.Hours.ToString("0") + ":" +
+                        aIFirstLap.Minutes.ToString("00") + ":" +
+                        aIFirstLap.Seconds.ToString("00") + "." +
+                        aIFirstLap.Milliseconds / 100;
+
+        var aISecondLap = TimeSpan.FromSeconds(currentlap.AISecondLapTime);
+        AISecondLap.text = aISecondLap.Hours.ToString("0") + ":" +
+                        aISecondLap.Minutes.ToString("00") + ":" +
+                        aISecondLap.Seconds.ToString("00") + "." +
+                        aISecondLap.Milliseconds / 100;
+
+        var aIThirdLap = TimeSpan.FromSeconds(currentlap.AIFinishTime);
+        AIThirdLap.text = aIThirdLap.Hours.ToString("0") + ":" +
+                        aIThirdLap.Minutes.ToString("00") + ":" +
+                        aIThirdLap.Seconds.ToString("00") + "." +
+                        aIThirdLap.Milliseconds / 100;
+
+        AIDirectHitsTotal.text = currentlap.AIDirectHits.ToString();
+
+        AIHitsTotal.text = currentlap.AIHits.ToString();
+
+        PlayerDirectHitsTotal.text = currentlap.playerDirectHits.ToString();
+
+        PlayerHitsTotal.text = currentlap.playerHits.ToString();
     }
 
 

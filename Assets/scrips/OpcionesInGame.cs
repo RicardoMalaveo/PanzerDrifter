@@ -21,7 +21,7 @@ public class OpcionesInGame : MonoBehaviour
         }
     }
 
-    void PauseGame()
+    public void PauseGame()
     {
         if (gamePaused == false)
         {

@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using static TurretRotation;
+using static UnityEngine.GraphicsBuffer;
 
-public class turretRotationAI : MonoBehaviour
+public class automaticTurrets : MonoBehaviour
 {
-    private Transform target ;
+    private Transform target;
     public float range = 120F;
-    public string enemyTag = "Enemy";
+    public string enemyTag = "TANKS";
     public Transform Turret;
+    public Transform barrel;
     public float turretRotationSpeed = 15F;
     public GameObject objectPrefab;
     public float fireRate = 1F;
-    private float fireCountDown = 3F;
-    public float launchSpeed = 450F;
+    private float fireCountDown = 0F;
+    public float launchSpeed = 300F;
     private AudioSource sonidoDisparo;
     public Transform bulletspawn;
 
@@ -22,15 +26,15 @@ public class turretRotationAI : MonoBehaviour
     }
     void UpdateTarget()
     {
-        GameObject [] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
         float shortestDistance = Mathf.Infinity;
         GameObject nearestEnemy = null;
         foreach (GameObject enemy in enemies)
         {
-            float distanceToEnemy = Vector3.Distance (transform.position, enemy.transform.position);
-            if (distanceToEnemy < shortestDistance) 
+            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+            if (distanceToEnemy < shortestDistance)
             {
-                shortestDistance = distanceToEnemy; 
+                shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
             }
         }
@@ -47,17 +51,23 @@ public class turretRotationAI : MonoBehaviour
 
     private void Update()
     {
-        if(target == null)
+        if (target == null)
         {
             return;
         }
 
-        //turret rotation to target
+        //turret rotation to target, horizontal
         Vector3 direction = target.position - transform.position;
         Quaternion LookRotation = Quaternion.LookRotation(direction);
-        Vector3 rotation = Quaternion.Lerp (Turret.rotation, LookRotation, Time.deltaTime * turretRotationSpeed).eulerAngles;
+        Vector3 rotation = Quaternion.Lerp(Turret.rotation, LookRotation, Time.deltaTime * turretRotationSpeed).eulerAngles;
         Turret.rotation = Quaternion.Euler(0F, rotation.y, 0F);
 
+        //vertical
+        var turretLocalAimDirection = Turret.transform.InverseTransformDirection(target.position - barrel.position);
+        barrel.localRotation = Quaternion.LookRotation(turretLocalAimDirection);
+
+
+        //fire rate
         if (fireCountDown <= 0F)
         {
             Shoot();

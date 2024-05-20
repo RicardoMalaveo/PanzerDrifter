@@ -16,7 +16,6 @@ public class checkPointManager : MonoBehaviour
               if (CheckPointManager.playerCheckPointIndex == index - 1)
               {
                     CheckPointManager.playerCheckPointIndex = index;
-                    Debug.Log("first check point");
               }
               else if (CheckPointManager.playerCheckPointIndex < index -1 && CheckPointManager.playerCheckPointIndex >=2)
               {
@@ -30,7 +29,6 @@ public class checkPointManager : MonoBehaviour
                 if (CheckPointManager.AICheckPointIndex == index - 1)
                 {
                     CheckPointManager.AICheckPointIndex = index;
-                    Debug.Log("first check point");
                 }
             }
     }

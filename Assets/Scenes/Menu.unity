@@ -347,7 +347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 95054480}
-  - component: {fileID: 95054479}
+  - component: {fileID: 95054481}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -355,32 +355,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &95054479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 95054478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 686ef79e0ffac7548a2c39052b3c9131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSounds:
-  - name: Theme
-    clip: {fileID: 8300000, guid: 50b1d4c7df509474cb5c7becac76221b, type: 3}
-  sfxSounds:
-  - name: Disparo
-    clip: {fileID: 8300000, guid: 2619aac68f989684b9ff444c3abc4204, type: 3}
-  - name: TanqueMotor
-    clip: {fileID: 8300000, guid: 06be2b50f859b974fb456402143eaab7, type: 3}
-  - name: Seleccion
-    clip: {fileID: 8300000, guid: b80793897042a394591ccae5a61d3de1, type: 3}
-  - name: Disparo
-    clip: {fileID: 8300000, guid: 2619aac68f989684b9ff444c3abc4204, type: 3}
-  musicSource: {fileID: 1893587312}
-  sfxSource: {fileID: 1967588832}
 --- !u!4 &95054480
 Transform:
   m_ObjectHideFlags: 0
@@ -398,6 +372,28 @@ Transform:
   - {fileID: 1967588833}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95054481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95054478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686ef79e0ffac7548a2c39052b3c9131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 50b1d4c7df509474cb5c7becac76221b, type: 3}
+  sfxSounds:
+  - name: Disparo
+    clip: {fileID: 8300000, guid: 2619aac68f989684b9ff444c3abc4204, type: 3}
+  - name: Motor
+    clip: {fileID: 8300000, guid: 06be2b50f859b974fb456402143eaab7, type: 3}
+  musicSource: {fileID: 1893587312}
+  sfxSource: {fileID: 1967588832}
 --- !u!1 &99296189
 GameObject:
   m_ObjectHideFlags: 0

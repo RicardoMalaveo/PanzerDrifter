@@ -6,8 +6,6 @@ using System;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
-
-
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
@@ -29,19 +27,16 @@ public class AudioManager : MonoBehaviour
         PlayMusic("Theme");
     }
 
-
-    public void PlayMusic(String name)
+    public void PlayMusic(string name)
     {
         Sound s = Array.Find(musicSounds, x => x.name == name);
-        if(s == null)
+        if (s == null)
         {
-            Debug.Log("Sound Not Found");
+            Debug.LogWarning($"Music sound '{name}' not found!");
+            return;
         }
-        else
-        {
-            musicSource.clip = s.clip;
-            musicSource.Play();
-        }
+        musicSource.clip = s.clip;
+        musicSource.Play();
     }
 
     public void PlaySFX(string name)
@@ -49,11 +44,29 @@ public class AudioManager : MonoBehaviour
         Sound s = Array.Find(sfxSounds, x => x.name == name);
         if (s == null)
         {
-            Debug.Log("Sound Not Found");
+            Debug.LogWarning($"SFX sound '{name}' not found!");
+            return;
         }
-        else
-        {
-            sfxSource.PlayOneShot(s.clip);
-        }
+        sfxSource.PlayOneShot(s.clip);
+    }
+
+    public void MuteMusic(bool mute)
+    {
+        musicSource.mute = mute;
+    }
+
+    public void MuteSFX(bool mute)
+    {
+        sfxSource.mute = mute;
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        musicSource.volume = volume;
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        sfxSource.volume = volume;
     }
 }

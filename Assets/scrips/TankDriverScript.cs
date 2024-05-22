@@ -168,7 +168,7 @@ public class TankDriverScript : MonoBehaviour
         {
             if (wheel != null)
             {
-                wheel.transform.Rotate(0.0f, WheelRotation - IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f);
+                wheel.transform.Rotate(0.0f, WheelRotation + IM.horizontal * wheelRotationSpeed * Time.deltaTime, 0.0f);
             }
         }
         //move the right wheels

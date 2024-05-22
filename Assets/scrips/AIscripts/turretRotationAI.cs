@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using TMPro;
 using UnityEngine;
 
 public class turretRotationAI : MonoBehaviour
@@ -14,6 +15,8 @@ public class turretRotationAI : MonoBehaviour
     public GameObject objectPrefab;
     public float fireRate = 1F;
     private float fireCountDown = 3F;
+    private float ammo = 10F;
+    private float ammoColdDown = 3F;
     public float launchSpeed = 450F;
     private AudioSource sonidoDisparo;
     public Transform bulletspawn;
@@ -64,11 +67,30 @@ public class turretRotationAI : MonoBehaviour
         var turretLocalAimDirection = Turret.transform.InverseTransformDirection(target.position - barrel.position);
         barrel.localRotation = Quaternion.LookRotation(turretLocalAimDirection);
 
-        if (fireCountDown <= 0F)
+
+        if (ammo >= 0)
         {
-            Shoot();
-            fireCountDown = 1F / fireRate;
+            if (ammo >= 1 && fireCountDown <= 0F) 
+            {
+                ammo -= 1;
+                Shoot();
+                fireCountDown = 1F / fireRate;
+            }
+
+            if (ammo < 10)
+            {
+                Debug.Log("ammo spent");
+                ammoColdDown -= Time.deltaTime;
+
+                if (ammoColdDown <= 0)
+                {
+                    Debug.Log("reloading");
+                    ammoColdDown = 3f;
+                    ammo += 1;
+                }
+            }
         }
+
         fireCountDown -= Time.deltaTime;
     }
 

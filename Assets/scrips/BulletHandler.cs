@@ -47,28 +47,29 @@ public class BulletHandler : MonoBehaviour
             crosshair.position = cam.WorldToScreenPoint(hit.point);
         }
 
-        if(ammo==0)
-        {   
-          
 
-            Debug.Log("ammo spent");
-             ammoColdDown -=Time.deltaTime;
-
-            if(ammoColdDown <= 0 )
-            {
-                Debug.Log("reloading");
-                ammoColdDown = 3f;
-                ammo = 10;
-            }
-         
-
-        }
-        else if(Input.GetKeyDown(KeyCode.Mouse0) && gameState.gamePaused == false)
+        if(ammo>=0)
         {
-            ammo -= 1;
-            sonidoDisparo = GetComponent<AudioSource>();
-            sonidoDisparo.PlayOneShot(sonidoDisparo.clip);
-            SpawnObject(); 
+            if(ammo >=1 && Input.GetKeyDown(KeyCode.Mouse0) && gameState.gamePaused == false)
+            {
+                ammo -= 1;
+                sonidoDisparo = GetComponent<AudioSource>();
+                sonidoDisparo.PlayOneShot(sonidoDisparo.clip);
+                SpawnObject();
+            }
+
+            if (ammo < 10)
+            {
+                Debug.Log("ammo spent");
+                ammoColdDown -= Time.deltaTime;
+
+                if (ammoColdDown <= 0)
+                {
+                    Debug.Log("reloading");
+                    ammoColdDown = 3f;
+                    ammo += 1;
+                }
+            }
         }
     }
 

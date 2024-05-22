@@ -9,10 +9,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public AIInputManager AINodes;
+    public inputManager PlayerNodes;
     public sceneManager loadmenu;
     public TankDriverScript speed;
     public GameObject needle;
     public checkPointAndPointSystem currentlap;
+    public TMP_Text playerPosition;
     public TMP_Text timer;
     public TMP_Text AIFirstLap;
     public TMP_Text AISecondLap;
@@ -30,7 +33,7 @@ public class GameManager : MonoBehaviour
     public GameObject Victory;
     private float startPosition = 180F;
     private float endPosition = -130F;
-    private float position;
+    private float needlePosition;
     public float currentSpeed;
     public float lapTimer;
 
@@ -43,6 +46,7 @@ public class GameManager : MonoBehaviour
     {        
         currentSpeed = speed.KPH;
         updateNeedle();
+        PositionTracker();
 
 
         lapTimer = Mathf.Max(0, lapTimer + Time.deltaTime);
@@ -134,10 +138,30 @@ public class GameManager : MonoBehaviour
 
     public void updateNeedle()
     {
-        position = startPosition - endPosition;
+        needlePosition = startPosition - endPosition;
 
         float temp = currentSpeed / 220F;
 
-        needle.transform.eulerAngles = new Vector3(0, 0, (startPosition - temp * position));
+        needle.transform.eulerAngles = new Vector3(0, 0, (startPosition - temp * needlePosition));
+    }
+
+    public void PositionTracker()
+    {
+        if(currentlap.playerLapNumber >= currentlap.AILapNumber)
+        {
+            if (PlayerNodes.currentNode > AINodes.AIcurrentNode)
+            {
+                playerPosition.text = "1st Position";
+            }
+            else
+            {
+                playerPosition.text = "2nd Position";
+            }
+
+        }
+        else
+        {
+            playerPosition.text = "2nd Position";
+        }
     }
 }

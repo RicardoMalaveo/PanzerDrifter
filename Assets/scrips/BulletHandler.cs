@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class BulletHandler : MonoBehaviour
 {
+    public Transform barrel;
     public float launchSpeed = 100.0f;
     private float ammo= 10F;
     private float ammoColdDown = 3F;
@@ -76,7 +77,7 @@ public class BulletHandler : MonoBehaviour
     void SpawnObject() 
     {
         Vector3 SpawnPosition = transform.position;
-        Quaternion spawnRotation = Quaternion.identity;
+        Quaternion spawnRotation = barrel.rotation;
 
         Vector3 localXDirection = transform.TransformDirection(Vector3.forward);
 

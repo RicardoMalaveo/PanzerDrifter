@@ -105,7 +105,7 @@ public class turretRotationAI : MonoBehaviour
         sonidoDisparo.PlayOneShot(sonidoDisparo.clip);
 
         Vector3 SpawnPosition = bulletspawn.transform.position;
-        Quaternion spawnRotation = Quaternion.identity;
+        Quaternion spawnRotation = barrel.rotation;
 
         Vector3 localXDirection = bulletspawn.transform.TransformDirection(Vector3.forward);
 

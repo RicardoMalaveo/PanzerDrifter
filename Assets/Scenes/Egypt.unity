@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 5987.069, g: 3556.2056, b: 2380.0627, a: 1}
+  m_IndirectSpecularColor: {r: 5987.4204, g: 3556.5981, b: 2380.1096, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20585,6 +20585,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7246977089518358188, guid: 39718cc5068d49f46a89af5bbc0fd2ef, type: 3}
   m_PrefabInstance: {fileID: 1011278033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1019118758 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1530112458732310434, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+  m_PrefabInstance: {fileID: 2920695695590098580}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1021408870
 PrefabInstance:
@@ -45396,6 +45401,14 @@ PrefabInstance:
       propertyPath: currentWayPoint
       value: 
       objectReference: {fileID: 1409926863}
+    - target: {fileID: 7870666443255374128, guid: d01c3ec258ba5124f88d13c22316e967, type: 3}
+      propertyPath: launchSpeed
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870666443255374128, guid: d01c3ec258ba5124f88d13c22316e967, type: 3}
+      propertyPath: objectPrefab
+      value: 
+      objectReference: {fileID: 6166801561995198858, guid: fd813bee2e390b54a8b40e36df7a48ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45826,9 +45839,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194227}
     - target: {fileID: 8076222332619190819, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+      propertyPath: tank
+      value: 
+      objectReference: {fileID: 7134780494313811449}
+    - target: {fileID: 8076222332619190819, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
       propertyPath: Bullet
       value: 
       objectReference: {fileID: 1986080239}
+    - target: {fileID: 8076222332619190819, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+      propertyPath: barrel
+      value: 
+      objectReference: {fileID: 1019118758}
     - target: {fileID: 8076222332619190819, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
       propertyPath: crosshair
       value: 
@@ -45841,6 +45862,14 @@ PrefabInstance:
       propertyPath: bulletCount
       value: 
       objectReference: {fileID: 1710828638}
+    - target: {fileID: 8076222332619190819, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+      propertyPath: launchSpeed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076222332619190819, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+      propertyPath: objectPrefab
+      value: 
+      objectReference: {fileID: 6166801561995198858, guid: fd813bee2e390b54a8b40e36df7a48ca, type: 3}
     - target: {fileID: 8465601233191984393, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
       propertyPath: m_Material
       value: 
@@ -46323,6 +46352,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8eb45caa3e8dd34287b68a1c4e979a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &7134780494313811449 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6941346002837243320, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+  m_PrefabInstance: {fileID: 2920695695590098580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7452032168718505302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6933953986382100098, guid: a908e9b745d9e774e90f892817a8d198, type: 3}

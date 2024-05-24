@@ -5,7 +5,7 @@ using UnityEngine;
 public class lapManager : MonoBehaviour
 {
     public List<checkPointManager> checkpoints;
-    public int totalLaps;
+    private float totalLaps = 3;
 
 
     private void OnTriggerEnter(Collider other)
@@ -15,30 +15,9 @@ public class lapManager : MonoBehaviour
 
         if (other.tag == "Enemy")
         {
-            if (CheckPointManager.playerCheckPointIndex < 3)
+            if (CheckPointManager.playerCheckPointIndex <3)
             {
                 Debug.Log("going the wrong way");
-            }
-            else if (CheckPointManager.playerLapNumber >= totalLaps)
-            {
-                CheckPointManager.playerFinishTime = timers.lapTimer;
-                if (CheckPointManager.AIFinishTime > 0)
-                {
-                    if (CheckPointManager.playerFinishTime < CheckPointManager.AIFinishTime)
-                    {
-                        CheckPointManager.playerPoints += 2000F;
-                    }
-                    else
-                    {
-                        CheckPointManager.AIPoints += 2000F;
-                    }
-
-                }
-                else
-                {
-                    CheckPointManager.playerPoints += 2000F;
-
-                }
             }
             else if (CheckPointManager.playerCheckPointIndex == checkpoints.Count)
             {
@@ -87,9 +66,30 @@ public class lapManager : MonoBehaviour
                     {
                         CheckPointManager.playerPoints += 1000F;
                     }
-
                 }
 
+                if (CheckPointManager.playerLapNumber >= totalLaps)
+                {
+                    Debug.Log("finish timer");
+                    CheckPointManager.playerFinishTime = timers.lapTimer;
+
+                    if (CheckPointManager.AIFinishTime >= 0)
+                    {
+                        if (CheckPointManager.playerFinishTime < CheckPointManager.AIFinishTime)
+                        {
+                            CheckPointManager.playerPoints += 2000F;
+                        }
+                        else
+                        {
+                            CheckPointManager.AIPoints += 2000F;
+                        }
+                    }
+                    else
+                    {
+                        CheckPointManager.playerPoints += 2000F;
+
+                    }
+                }
             }
         }
 
@@ -113,17 +113,14 @@ public class lapManager : MonoBehaviour
 
                 if (CheckPointManager.AILapNumber == 2F)
                 {
-                    CheckPointManager.AIFirstLapTime = timers.lapTimer;
+                    CheckPointManager.AISecondLapTime = timers.lapTimer;
                 }
 
-                if (CheckPointManager.AILapNumber == 2F)
+                if (CheckPointManager.AILapNumber == 3F)
                 {
-                    CheckPointManager.AIFirstLapTime = timers.lapTimer;
+                    CheckPointManager.AIFinishTime = timers.lapTimer;
                 }
-
             }
         }
-
-
     }
 }

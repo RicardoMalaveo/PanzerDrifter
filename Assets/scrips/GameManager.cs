@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     private float needlePosition;
     public float currentSpeed;
     public float lapTimer;
+    private float delay = 2F;
 
     private void Start()
     {
@@ -68,27 +69,6 @@ public class GameManager : MonoBehaviour
         {
             lapCount.text = "3rd Lap";
         }
-
-
-
-       if( currentlap.playerLapNumber ==3)
-       {
-            Time.timeScale = 0;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-
-            if (currentlap.playerPoints > currentlap.AIPoints)
-            {
-                EndGamePanel.SetActive(true);
-                Victory.SetActive(true);
-            }
-            else
-            {
-                EndGamePanel.SetActive(true);
-                defeat.SetActive(true);
-            }
-       }
-
 
         var playerFirstLap = TimeSpan.FromSeconds(currentlap.playerFirstLapTime);
         PlayerFirstLap.text = playerFirstLap.Hours.ToString("0") + ":" +
@@ -133,6 +113,30 @@ public class GameManager : MonoBehaviour
         PlayerDirectHitsTotal.text = currentlap.playerDirectHits.ToString();
 
         PlayerHitsTotal.text = currentlap.playerHits.ToString();
+
+
+       if( currentlap.playerLapNumber ==3)
+       {
+            delay -= Time.deltaTime;
+            if(delay <=0)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
+                if (currentlap.playerPoints > currentlap.AIPoints)
+                {
+                    EndGamePanel.SetActive(true);
+                    Victory.SetActive(true);
+                    Time.timeScale = 0;
+                }
+                else
+                {
+                    EndGamePanel.SetActive(true);
+                    defeat.SetActive(true);
+                    Time.timeScale = 0;
+                }
+            }
+       }
     }
 
 
@@ -149,7 +153,7 @@ public class GameManager : MonoBehaviour
     {
         if(currentlap.playerLapNumber >= currentlap.AILapNumber)
         {
-            if (PlayerNodes.currentNode > AINodes.AIcurrentNode)
+            if (PlayerNodes.currentNode > AINodes.AIcurrentNode || currentlap.playerLapNumber > currentlap.AILapNumber)
             {
                 playerPosition.text = "1st Position";
             }

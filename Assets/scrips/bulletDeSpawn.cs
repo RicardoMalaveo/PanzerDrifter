@@ -7,7 +7,13 @@ public class bulletDeSpawn : MonoBehaviour
     public GameObject impactEffect;
     public float torqueReductor;
     private float torqueMininum = 0F;
+    public AudioClip[] impactSounds; // Matriz de clips de audio
+    private AudioSource audioSource; // Componente AudioSource
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void OnTriggerEnter(Collider other)
     {
@@ -15,6 +21,18 @@ public class bulletDeSpawn : MonoBehaviour
         GameObject EffectIns = Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(EffectIns, 1F);
         Destroy(gameObject, 1F);
+
+        // Comprobación para reproducir sonido solo si se impacta al jugador o a la IA
+        if (other.CompareTag("PlayerTBody") || other.CompareTag("PlayerOL") || other.CompareTag("PlayerOD") ||
+            other.CompareTag("AITBody") || other.CompareTag("AIOL") || other.CompareTag("AIOD"))
+        {
+            // Reproducir un sonido aleatorio de impacto
+            if (impactSounds.Length > 0)
+            {
+                int randomIndex = Random.Range(0, impactSounds.Length);
+                audioSource.PlayOneShot(impactSounds[randomIndex]);
+            }
+        }
 
         checkPointAndPointSystem points = FindAnyObjectByType<checkPointAndPointSystem>();
 

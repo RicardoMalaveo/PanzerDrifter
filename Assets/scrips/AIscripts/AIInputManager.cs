@@ -33,7 +33,7 @@ public class AIInputManager : MonoBehaviour
 
     private void AIDrive()
     {
-        vertical = 0.7F;
+        vertical = 0.8F;
         AIRotation();
     }
     private void AIRotation()

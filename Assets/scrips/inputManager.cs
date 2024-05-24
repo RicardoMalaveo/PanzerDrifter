@@ -12,6 +12,7 @@ public class inputManager : MonoBehaviour
     public Transform currentWayPoint;
     public int currentNode;
     [Range(0, 10)] public int distanceOffset;
+    
 
     private void Awake()
     {
@@ -61,4 +62,5 @@ public class inputManager : MonoBehaviour
         {
         }
     }
+   
 }

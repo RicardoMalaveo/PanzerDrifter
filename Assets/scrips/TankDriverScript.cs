@@ -29,17 +29,26 @@ public class TankDriverScript : MonoBehaviour
     public float wheelRotationSpeed = 500f;
     public float KPH;
     public string playerName = "Player One";
-
+    public float maxSpeed = 220f; // Velocidad máxima del vehículo
+    public float minPitch = 1f; // Pitch mínimo del audio
+    public float maxPitch = 3f; // Pitch máximo del audio
+    private AudioSource audioSource; // Para ajustar el pitch del audio
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         getIM();
         rb.centerOfMass += new Vector3(xmas, ymas, zmas);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
+
+        float speed = rb.velocity.magnitude; // Obtener la magnitud de la velocidad
+        float speedNormalized = Mathf.Clamp01(speed / maxSpeed); // Normalizar la velocidad
+        audioSource.pitch = Mathf.Lerp(minPitch, maxPitch, speedNormalized); // Ajustar el pitch del audio
+
         if (torqueRight > 440000F)
         {
             rightOruga.color = Color.green;
@@ -191,5 +200,4 @@ public class TankDriverScript : MonoBehaviour
         IM = GetComponent<inputManager>();
         rb = GetComponent<Rigidbody>();
     }
-
 }

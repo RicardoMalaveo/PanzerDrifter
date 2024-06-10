@@ -6,6 +6,9 @@ public class CaterpillerAnimationLeft : MonoBehaviour
 {
     public Animator AnimatorControlerLeft;
 
+    public float speedTank=0F;
+
+
 
     public void Start()
     {
@@ -14,6 +17,24 @@ public class CaterpillerAnimationLeft : MonoBehaviour
 
     public void Update()
     {
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.D))
+        {
+            if (speedTank > 4)
+            {
+                speedTank = 4;
+            }
+            speedTank += Time.deltaTime;
+        }
+        else
+        {
+            if (speedTank < 0)
+            {
+                speedTank = 0;
+            }
+            speedTank -= Time.deltaTime;
+        }
+
+        AnimatorControlerLeft.SetFloat("SpeedLeft", speedTank);
 
         if (Input.GetKey(KeyCode.D))
         {
@@ -28,7 +49,6 @@ public class CaterpillerAnimationLeft : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 AnimatorControlerLeft.SetBool("Forward", true);
-
             }
 
             if (Input.GetKey(KeyCode.S))

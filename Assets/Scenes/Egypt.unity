@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 5419.6167, g: 3049.3538, b: 1772.8518, a: 1}
+  m_IndirectSpecularColor: {r: 5524.488, g: 3076.766, b: 1734.0803, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -46039,6 +46039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank-Player-UV
       objectReference: {fileID: 0}
+    - target: {fileID: 1689197389427915070, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+      propertyPath: TankDriverScript
+      value: 
+      objectReference: {fileID: 5538026641464854696}
     - target: {fileID: 3189142070390600866, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -46051,6 +46055,10 @@ PrefabInstance:
       propertyPath: m_ProvidesContacts
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3476903646897165898, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+      propertyPath: TankDriverScript
+      value: 
+      objectReference: {fileID: 5538026641464854696}
     - target: {fileID: 6941346002837243320, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

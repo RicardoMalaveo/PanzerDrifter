@@ -5,6 +5,9 @@ using UnityEngine;
 public class CaterpillerAnimationRight : MonoBehaviour
 {
     public Animator AnimatorControlerRight;
+    public TankDriverScript TankDriverScript;
+    public float speedTank= 0F;
+    public float speedAdjustment;
 
 
     public void Start()
@@ -14,6 +17,24 @@ public class CaterpillerAnimationRight : MonoBehaviour
 
     public void Update()
     {
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            if (speedTank > 4)
+            {
+                speedTank = 4;
+            }
+            speedTank += Time.deltaTime;
+        }
+        else
+        {
+            if (speedTank <0)
+            {
+                speedTank = 0;
+            }
+            speedTank -= Time.deltaTime;
+        }
+
+        AnimatorControlerRight.SetFloat("SpeedRight", speedTank);
         if (Input.GetKey(KeyCode.D))
         {
             AnimatorControlerRight.SetBool("Backward", true);

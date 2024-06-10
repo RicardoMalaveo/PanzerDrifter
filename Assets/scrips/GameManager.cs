@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
     private float needlePosition;
     public float currentSpeed;
     public float lapTimer;
-    private float delay = 2F;
 
     private void Start()
     {
@@ -117,9 +116,6 @@ public class GameManager : MonoBehaviour
 
        if( currentlap.playerLapNumber ==3)
        {
-            delay -= Time.deltaTime;
-            if(delay <=0)
-            {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
 
@@ -135,7 +131,6 @@ public class GameManager : MonoBehaviour
                     defeat.SetActive(true);
                     Time.timeScale = 0;
                 }
-            }
        }
     }
 

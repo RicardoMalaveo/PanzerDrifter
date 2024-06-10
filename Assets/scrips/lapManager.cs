@@ -7,6 +7,10 @@ public class lapManager : MonoBehaviour
     public List<checkPointManager> checkpoints;
     private float totalLaps = 3;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -70,10 +74,9 @@ public class lapManager : MonoBehaviour
 
                 if (CheckPointManager.playerLapNumber >= totalLaps)
                 {
-                    Debug.Log("finish timer");
                     CheckPointManager.playerFinishTime = timers.lapTimer;
 
-                    if (CheckPointManager.AIFinishTime >= 0)
+                    if (CheckPointManager.AIFinishTime > 0)
                     {
                         if (CheckPointManager.playerFinishTime < CheckPointManager.AIFinishTime)
                         {

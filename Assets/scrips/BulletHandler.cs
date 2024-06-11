@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,7 +10,7 @@ public class BulletHandler : MonoBehaviour
 {
     public Transform barrel;
     public float launchSpeed = 100.0f;
-    private float ammo= 10F;
+    private float ammo = 10F;
     private float ammoColdDown = 3F;
     public TMP_Text bulletCount;
     public Image Bullet;
@@ -19,6 +20,17 @@ public class BulletHandler : MonoBehaviour
     public RectTransform crosshair;
     public Camera cam;
     public OpcionesInGame gameState;
+    public DisparoHumoVFX disparoHumoVFX; // Referencia al script DisparoHumoVFX
+
+    // Definir un delegado y un evento
+    public delegate void DisparoEventHandler();
+    public event DisparoEventHandler OnDisparo;
+    public GameObject bulletSpawnPoint; // GameObject que representa el punto de spawn del humo
+    public GameObject SpawnSmoke;
+    void Start()
+    {
+        sonidoDisparo = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -40,7 +52,7 @@ public class BulletHandler : MonoBehaviour
         else
         {
             Bullet.color = Color.black;
-        } 
+        }
 
         RaycastHit hit;
         if (Physics.Raycast(BulletSpawn.transform.position, BulletSpawn.transform.forward, out hit))
@@ -48,20 +60,25 @@ public class BulletHandler : MonoBehaviour
             crosshair.position = cam.WorldToScreenPoint(hit.point);
         }
 
-
-        if(ammo>=0)
+        if (ammo >= 0)
         {
-            if(ammo >=1 && Input.GetKeyDown(KeyCode.Mouse0) && gameState.gamePaused == false)
+            if (ammo >= 1 && Input.GetKeyDown(KeyCode.Mouse0) && !gameState.gamePaused)
             {
                 ammo -= 1;
-                sonidoDisparo = GetComponent<AudioSource>();
                 sonidoDisparo.PlayOneShot(sonidoDisparo.clip);
                 SpawnObject();
+
+                // Disparar el evento OnDisparo
+                if (OnDisparo != null)
+                {
+                    Debug.Log("Evento OnDisparo invocado"); // Mensaje de depuración
+                    OnDisparo.Invoke();
+                }
             }
 
             if (ammo < 10)
             {
-                Debug.Log("ammo spent");
+                //Debug.Log("ammo spent");
                 ammoColdDown -= Time.deltaTime;
 
                 if (ammoColdDown <= 0)
@@ -74,7 +91,16 @@ public class BulletHandler : MonoBehaviour
         }
     }
 
-    void SpawnObject() 
+    // Método para spawnear el humo en la posición del bulletSpawnPoint
+    void SpawnHumo()
+    {
+        // Obtener la posición del punto de spawn del humo
+        Vector3 spawnPosition = bulletSpawnPoint.transform.position;
+
+        // Spawnear el humo en la posición del bulletSpawnPoint
+        Instantiate(SpawnSmoke, spawnPosition, Quaternion.identity);
+    }
+    void SpawnObject()
     {
         Vector3 SpawnPosition = transform.position;
         Quaternion spawnRotation = barrel.rotation;

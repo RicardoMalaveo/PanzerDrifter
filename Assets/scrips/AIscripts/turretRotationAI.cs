@@ -79,7 +79,7 @@ public class turretRotationAI : MonoBehaviour
 
             if (ammo < 10)
             {
-                Debug.Log("ammo spent");
+                //Debug.Log("ammo spent");
                 ammoColdDown -= Time.deltaTime;
 
                 if (ammoColdDown <= 0)

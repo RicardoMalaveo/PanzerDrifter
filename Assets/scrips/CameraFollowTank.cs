@@ -7,7 +7,6 @@ public class CameraFollowTank : MonoBehaviour
     public Transform reset;
     public Transform objectToFollow; 
     public Transform objectToFollowBody;
-    public Transform objectToFollowFree;
 
     public Vector3 offset;
     public float followSpeed = 10;
@@ -20,10 +19,6 @@ public class CameraFollowTank : MonoBehaviour
         {
             objectToFollow = objectToFollowBody;
 
-        }
-        else if(Input.GetKey(KeyCode.LeftControl))
-        {
-            objectToFollow = objectToFollowFree;
         }
         else
         {

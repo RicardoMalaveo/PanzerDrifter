@@ -19,9 +19,9 @@ public class CaterpillerAnimationLeft : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.D))
         {
-            if (speedTank > 6)
+            if (speedTank > 5)
             {
-                speedTank = 6;
+                speedTank = 5;
             }
             speedTank += Time.deltaTime;
         }

@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 5520.192, g: 3074.0356, b: 1733.4905, a: 1}
+  m_IndirectSpecularColor: {r: 5980.028, g: 3531.8286, b: 2257.5706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19089,8 +19089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reset: {fileID: 3473512172502948971}
   objectToFollow: {fileID: 3473512172502948971}
-  objectToFollowBody: {fileID: 5238318770763362326}
-  objectToFollowFree: {fileID: 2822351322825081888}
+  objectToFollowBody: {fileID: 2138817568}
   offset: {x: 0, y: 0.77, z: -28}
   followSpeed: 10
   lookSpeed: 10
@@ -45668,6 +45667,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4446610272280905949, guid: 273a511b076273740ba07dcb4ca69957, type: 3}
   m_PrefabInstance: {fileID: 2133188968}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2138817568 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1992387684663527067, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+  m_PrefabInstance: {fileID: 2637980978905983485}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2140000945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46062,6 +46066,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1024681341249046879, guid: d01c3ec258ba5124f88d13c22316e967, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9582ba93769423e45bdba51bf9e9a670, type: 2}
+    - target: {fileID: 3488518803401828811, guid: d01c3ec258ba5124f88d13c22316e967, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f64dafd67f011404a811f279e0374b2e, type: 2}
     - target: {fileID: 3587194551125075868, guid: d01c3ec258ba5124f88d13c22316e967, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -46332,7 +46344,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 753449784}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2381620364698761965, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
+    - {fileID: 671650029004602473, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1530112458732310434, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
       insertIndex: -1
@@ -46357,11 +46371,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2822351322825081888 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1126855183351857844, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
-  m_PrefabInstance: {fileID: 2637980978905983485}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3045994377036721540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46726,11 +46735,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7865111325417519724, guid: d302fe0cc0d9ef74ea84c423284e9dc8, type: 3}
   m_PrefabInstance: {fileID: 5007275882945885193}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5238318770763362326 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6933953986382100098, guid: a908e9b745d9e774e90f892817a8d198, type: 3}
-  m_PrefabInstance: {fileID: 2637980978905983485}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &5250344129486390060 stripped
 Transform:

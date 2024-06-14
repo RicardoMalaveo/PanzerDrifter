@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AICaterpillerAnimationRight : MonoBehaviour
 {
-    public Animator AnimatorControlerRight;
+    public Animator AIAnimatorControlerRight;
     public AIInputManager rotation;
     public float speedTank = 0F;
 
@@ -12,16 +12,16 @@ public class AICaterpillerAnimationRight : MonoBehaviour
 
     public void Start()
     {
-        AnimatorControlerRight = GetComponent<Animator>();
+        AIAnimatorControlerRight = GetComponent<Animator>();
     }
 
     public void Update()
     {
         if (rotation.horizontal < 0.2 || rotation.horizontal > 0.2 || rotation.horizontal < 0.2 || rotation.horizontal > 0.2)
         {
-            if (speedTank > 6)
+            if (speedTank > 5)
             {
-                speedTank = 6;
+                speedTank = 5;
             }
             speedTank += Time.deltaTime;
         }
@@ -34,35 +34,35 @@ public class AICaterpillerAnimationRight : MonoBehaviour
             speedTank -= Time.deltaTime;
         }
 
-        AnimatorControlerRight.SetFloat("SpeedRight", speedTank);
+        AIAnimatorControlerRight.SetFloat("SpeedRight", speedTank);
 
         if (rotation.horizontal < 0.2)
         {
-            AnimatorControlerRight.SetBool("Forward", false);
-            AnimatorControlerRight.SetBool("Backward", true);
+            AIAnimatorControlerRight.SetBool("Forward", false);
+            AIAnimatorControlerRight.SetBool("Backward", true);
         }
         else if (rotation.horizontal > 0.2)
         {
-            AnimatorControlerRight.SetBool("Backward", false);
-            AnimatorControlerRight.SetBool("Forward", true);
+            AIAnimatorControlerRight.SetBool("Backward", false);
+            AIAnimatorControlerRight.SetBool("Forward", true);
         }
         else
         {
             if (rotation.vertical > 0)
             {
-                AnimatorControlerRight.SetBool("Forward", true);
+                AIAnimatorControlerRight.SetBool("Forward", true);
 
             }
 
             if (rotation.vertical < 0)
             {
-                AnimatorControlerRight.SetBool("Backward", true);
+                AIAnimatorControlerRight.SetBool("Backward", true);
             }
 
             if (rotation.vertical == 0)
             {
-                AnimatorControlerRight.SetBool("Forward", false);
-                AnimatorControlerRight.SetBool("Backward", false);
+                AIAnimatorControlerRight.SetBool("Forward", false);
+                AIAnimatorControlerRight.SetBool("Backward", false);
             }
         }
     }

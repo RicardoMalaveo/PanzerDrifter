@@ -7,7 +7,6 @@ public class CaterpillerAnimationRight : MonoBehaviour
     public Animator AnimatorControlerRight;
     public TankDriverScript TankDriverScript;
     public float speedTank= 0F;
-    public float speedAdjustment;
 
 
     public void Start()
@@ -19,9 +18,9 @@ public class CaterpillerAnimationRight : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
-            if (speedTank > 4)
+            if (speedTank > 6)
             {
-                speedTank = 4;
+                speedTank = 6;
             }
             speedTank += Time.deltaTime;
         }

@@ -35,13 +35,13 @@ public class DisparoHumoVFX : MonoBehaviour
         }
     }
 
-    /*void OnDestroy()
+    void OnDestroy()
     {
         if (bulletHandler != null)
         {
             bulletHandler.OnDisparo -= DispararHumo;
         }
-    }*/
+    }
 
     public void DispararHumo()
     {

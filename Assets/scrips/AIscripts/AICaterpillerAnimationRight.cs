@@ -6,6 +6,8 @@ public class AICaterpillerAnimationRight : MonoBehaviour
 {
     public Animator AnimatorControlerRight;
     public AIInputManager rotation;
+    public float speedTank = 0F;
+
 
 
     public void Start()
@@ -15,6 +17,24 @@ public class AICaterpillerAnimationRight : MonoBehaviour
 
     public void Update()
     {
+        if (rotation.horizontal < 0.2 || rotation.horizontal > 0.2 || rotation.horizontal < 0.2 || rotation.horizontal > 0.2)
+        {
+            if (speedTank > 6)
+            {
+                speedTank = 6;
+            }
+            speedTank += Time.deltaTime;
+        }
+        else
+        {
+            if (speedTank < 0)
+            {
+                speedTank = 0;
+            }
+            speedTank -= Time.deltaTime;
+        }
+
+        AnimatorControlerRight.SetFloat("SpeedRight", speedTank);
 
         if (rotation.horizontal < 0.2)
         {
@@ -44,7 +64,6 @@ public class AICaterpillerAnimationRight : MonoBehaviour
                 AnimatorControlerRight.SetBool("Forward", false);
                 AnimatorControlerRight.SetBool("Backward", false);
             }
-
         }
     }
 }

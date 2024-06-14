@@ -7,7 +7,7 @@ using UnityEngine.VFX;
 public class DisparoHumoVFX : MonoBehaviour
 {
     public VisualEffect visualEffect;
-    public Transform bulletSpawn; // Referencia al objeto BulletSpawn
+    public Transform bulletSpawn;
     public BulletHandler bulletHandler;
     public turretRotationAI turretRotationAI;
 
@@ -45,7 +45,6 @@ public class DisparoHumoVFX : MonoBehaviour
 
     public void DispararHumo()
     {
-        Debug.Log("DispararHumo llamado"); // Mensaje de depuración
         if (visualEffect != null && bulletSpawn != null)
         {
             // Obtener la posición y rotación local del BulletSpawn
@@ -59,11 +58,7 @@ public class DisparoHumoVFX : MonoBehaviour
             // Establecer la posición y rotación de spawn del humo
             visualEffect.transform.position = globalSpawnPosition;
             visualEffect.transform.rotation = globalSpawnRotation;
-
-            // Activar el efecto de humo
-            Debug.Log("Invoco el effecto de humo");
             visualEffect.SendEvent("OnPlay");
         }
-
     }
 }

@@ -19,7 +19,10 @@ public class turretRotationAI : MonoBehaviour
     private float ammoColdDown = 3F;
     public float launchSpeed = 450F;
     private AudioSource sonidoDisparo;
+    public delegate void DisparoEventHandler();
+    public event DisparoEventHandler OnDisparo;
     public Transform bulletspawn;
+
 
     private void Start()
     {
@@ -75,6 +78,7 @@ public class turretRotationAI : MonoBehaviour
                 ammo -= 1;
                 Shoot();
                 fireCountDown = 1F / fireRate;
+                OnDisparo.Invoke();
             }
 
             if (ammo < 10)

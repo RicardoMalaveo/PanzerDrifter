@@ -20,13 +20,13 @@ public class BulletHandler : MonoBehaviour
     public RectTransform crosshair;
     public Camera cam;
     public OpcionesInGame gameState;
-    public DisparoHumoVFX disparoHumoVFX; // Referencia al script DisparoHumoVFX
+    //public DisparoHumoVFX disparoHumoVFX; // Referencia al script DisparoHumoVFX
 
     // Definir un delegado y un evento
     public delegate void DisparoEventHandler();
     public event DisparoEventHandler OnDisparo;
     public GameObject bulletSpawnPoint; // GameObject que representa el punto de spawn del humo
-    public GameObject SpawnSmoke;
+
     void Start()
     {
         sonidoDisparo = GetComponent<AudioSource>();
@@ -69,11 +69,8 @@ public class BulletHandler : MonoBehaviour
                 SpawnObject();
 
                 // Disparar el evento OnDisparo
-                if (OnDisparo != null)
-                {
-                    Debug.Log("Evento OnDisparo invocado"); // Mensaje de depuración
-                    OnDisparo.Invoke();
-                }
+                OnDisparo.Invoke();
+                
             }
 
             if (ammo < 10)
@@ -91,15 +88,6 @@ public class BulletHandler : MonoBehaviour
         }
     }
 
-    // Método para spawnear el humo en la posición del bulletSpawnPoint
-    void SpawnHumo()
-    {
-        // Obtener la posición del punto de spawn del humo
-        Vector3 spawnPosition = bulletSpawnPoint.transform.position;
-
-        // Spawnear el humo en la posición del bulletSpawnPoint
-        Instantiate(SpawnSmoke, spawnPosition, Quaternion.identity);
-    }
     void SpawnObject()
     {
         Vector3 SpawnPosition = transform.position;

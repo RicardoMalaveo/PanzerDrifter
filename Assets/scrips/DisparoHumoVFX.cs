@@ -9,6 +9,7 @@ public class DisparoHumoVFX : MonoBehaviour
     public VisualEffect visualEffect;
     public Transform bulletSpawn; // Referencia al objeto BulletSpawn
     public BulletHandler bulletHandler;
+    public turretRotationAI turretRotationAI;
 
 
     void Start()
@@ -22,15 +23,25 @@ public class DisparoHumoVFX : MonoBehaviour
         {
             bulletHandler.OnDisparo += DispararHumo;
         }
+
+        if (visualEffect == null)
+        {
+            visualEffect = GetComponent<VisualEffect>();
+        }
+
+        if (turretRotationAI != null)
+        {
+            turretRotationAI.OnDisparo += DispararHumo;
+        }
     }
 
-    void OnDestroy()
+    /*void OnDestroy()
     {
         if (bulletHandler != null)
         {
             bulletHandler.OnDisparo -= DispararHumo;
         }
-    }
+    }*/
 
     public void DispararHumo()
     {
@@ -53,5 +64,6 @@ public class DisparoHumoVFX : MonoBehaviour
             Debug.Log("Invoco el effecto de humo");
             visualEffect.SendEvent("OnPlay");
         }
+
     }
 }
